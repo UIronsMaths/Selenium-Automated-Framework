@@ -6,6 +6,17 @@ public abstract class BaseTest
 {
     protected IWebDriver Driver => DriverContext.Driver;
 
+    private string TestName => TestContext.CurrentContext.Test.Name;
+
+    [OneTimeSetUp]
+    public void OneTimeSetUp()
+    {
+        var settings = ConfigurationManager.Settings;
+
+        if (settings.ReportType is "extent" or "both")
+            ExtentReportManager.Initialise();
+    }
+
     [SetUp]
     public void SetUp()
     {
@@ -15,46 +26,82 @@ public abstract class BaseTest
         driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(settings.PageLoadTimeoutSeconds);
 
         DriverContext.SetDriver(driver);
+
+        LogManager.TestStarted(TestName);
+
+        if (settings.ReportType is "extent" or "both")
+            ExtentReportManager.CreateTest(TestName);
+
+        LogManager.Step($"Navigating to {settings.BaseUrl}");
         Driver.Navigate().GoToUrl(settings.BaseUrl);
     }
 
     [TearDown]
     public void TearDown()
     {
+        var status = TestContext.CurrentContext.Result.Outcome.Status;
+        var message = TestContext.CurrentContext.Result.Message;
+
         try
         {
-            if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
+            if (status == TestStatus.Failed)
             {
-                TakeFailureScreenshot();
+                HandleTestFailure(message);
+            }
+            else
+            {
+                LogManager.TestPassed(TestName);
+
+                if (ConfigurationManager.Settings.ReportType is "extent" or "both")
+                    ExtentReportManager.LogPass("Test passed.");
             }
         }
         finally
         {
+            ExtentReportManager.Flush();
             DriverContext.QuitDriver();
         }
     }
 
-    private void TakeFailureScreenshot()
+    [OneTimeTearDown]
+    public void OneTimeTearDown()
     {
+        ExtentReportManager.Flush();
+    }
+
+    private void HandleTestFailure(string? message)
+    {
+        LogManager.TestFailed(TestName, message);
+
         if (!DriverContext.IsInitialised) return;
 
         var settings = ConfigurationManager.Settings;
-        var screenshotDir = settings.ScreenshotDirectory;
+        var screenshotPath = ScreenshotUtils.CaptureOnFailure(Driver, TestName);
 
-        try
+        if (screenshotPath is not null)
         {
-            var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
-            Directory.CreateDirectory(screenshotDir);
+            LogManager.Step($"Screenshot saved to: {screenshotPath}");
+            TestContext.AddTestAttachment(screenshotPath);
 
-            var fileName = $"{TestContext.CurrentContext.Test.Name}_{DateTime.Now:yyyyMMdd_HHmmss}.png";
-            var path = Path.Combine(screenshotDir, fileName);
-
-            screenshot.SaveAsFile(path);
-            TestContext.AddTestAttachment(path);
+            if (settings.ReportType is "extent" or "both")
+                ExtentReportManager.LogFail(message ?? "Test failed.", screenshotPath);
         }
-        catch (Exception ex)
+        else
         {
-            TestContext.WriteLine($"Failed to capture screenshot: {ex.Message}");
+            // Fall back to base64 if file capture failed
+            var base64 = ScreenshotUtils.CaptureAsBase64(Driver);
+
+            if (settings.ReportType is "extent" or "both")
+                ExtentReportManager.LogFailWithBase64(message ?? "Test failed.", base64);
         }
+    }
+
+    // Helper for subclasses to log steps to both Serilog and Extent in one call
+    protected void LogStep(string description)
+    {
+        LogManager.Step(description);
+
+        if (ConfigurationManager.Settings.ReportType is "extent" or "both")
+            ExtentReportManager.LogStep(description);
     }
 }
