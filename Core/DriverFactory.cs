@@ -37,6 +37,8 @@ public static class DriverFactory
         options.AddArgument("--disable-password-manager-reauthentication");
         options.AddArgument("--disable-autofill-keyboard-accessory-view");
         options.AddArgument("--disable-component-extensions-with-background-pages");
+        options.AddArgument("--disable-features=PasswordLeakDetection");
+        options.AddUserProfilePreference("profile.password_manager_leak_detection", false);
 
         options.AddUserProfilePreference("profile.password_manager_enabled", false);
         options.AddUserProfilePreference("credentials_enable_service", false);
