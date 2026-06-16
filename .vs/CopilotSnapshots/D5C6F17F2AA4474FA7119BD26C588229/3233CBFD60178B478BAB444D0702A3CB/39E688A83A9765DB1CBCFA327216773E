@@ -1,0 +1,41 @@
+﻿using OpenQA.Selenium;
+using SeleniumExtras.PageObjects;
+public class LoginPage
+{
+    private readonly IWebDriver driver;
+    [FindsBy(How = How.Id, Using = "user-name")]
+    private IWebElement Username { get; set; } = null!;
+    [FindsBy(How = How.Id, Using = "password")]
+    private IWebElement Password { get; set; } = null!;
+    [FindsBy(How = How.Id, Using = "login-button")]
+    private IWebElement LoginButton { get; set; } = null!;
+    [FindsBy(How = How.CssSelector, Using = ".modal-button")]
+    private IWebElement OkButton { get; set; } = null!;
+    public LoginPage(IWebDriver driver)
+    {
+        this.driver = driver;
+        PageFactory.InitElements(driver, this);
+    }
+    public InventoryPage LoginAs(string username, string password)
+    {
+        Username.Clear();
+        Username.SendKeys(username);
+        Password.Clear();
+        Password.SendKeys(password);
+        LoginButton.Click();
+        HandlePopup();
+        return new InventoryPage(driver);
+    }
+    private void HandlePopup()
+    {
+        try
+        {
+            var okButton = WaitUtils.WaitForElementClickable(driver, By.CssSelector(".modal-button"), 5);
+            okButton.Click();
+        }
+        catch
+        {
+            // Popup might not always appear, so we'll silently continue
+        }
+    }
+}

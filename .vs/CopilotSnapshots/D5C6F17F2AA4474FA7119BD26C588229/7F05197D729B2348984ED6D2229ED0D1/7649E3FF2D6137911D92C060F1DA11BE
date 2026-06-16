@@ -1,0 +1,98 @@
+﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+
+public static class ExtentReportManager
+{
+    private static ExtentReports? _extent;
+    private static readonly ThreadLocal<ExtentTest> _currentTest = new ThreadLocal<ExtentTest>();
+    private static readonly object _lock = new object();
+
+    public static void Initialise()
+    {
+        if (_extent is not null) return;
+
+        lock (_lock)
+        {
+            if (_extent is not null) return;
+
+            var settings = ConfigurationManager.Settings;
+            var reportDir = settings.ExtentReportDirectory;
+
+            Directory.CreateDirectory(reportDir);
+
+            var reportPath = Path.Combine(reportDir,
+                $"TestReport_{DateTime.Now:yyyyMMdd_HHmmss}.html");
+
+            var htmlReporter = new ExtentSparkReporter(reportPath);
+            htmlReporter.Config.DocumentTitle = "SauceDemo Automation Report";
+            htmlReporter.Config.ReportName = "Test Execution Report";
+            htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Config.Theme.Dark;
+
+            _extent = new ExtentReports();
+            _extent.AttachReporter(htmlReporter);
+            _extent.AddSystemInfo("Browser", settings.Browser);
+            _extent.AddSystemInfo("BaseUrl", settings.BaseUrl);
+            _extent.AddSystemInfo("Environment", ".NET 8 / NUnit");
+        }
+    }
+
+    public static void CreateTest(string testName)
+    {
+        if (_extent is null)
+            throw new InvalidOperationException("ExtentReportManager has not been initialised. Call Initialise() first.");
+
+        _currentTest.Value = _extent.CreateTest(testName);
+    }
+
+    public static void LogPass(string message)
+    {
+        _currentTest.Value?.Pass(message);
+    }
+
+    public static void LogFail(string message, string? screenshotPath = null)
+    {
+        var test = _currentTest.Value;
+        if (test is null) return;
+
+        if (screenshotPath is not null && File.Exists(screenshotPath))
+        {
+            test.Fail(message,
+                MediaEntityBuilder.CreateScreenCaptureFromPath(screenshotPath).Build());
+        }
+        else
+        {
+            test.Fail(message);
+        }
+    }
+
+    public static void LogFailWithBase64(string message, string? base64Screenshot = null)
+    {
+        var test = _currentTest.Value;
+        if (test is null) return;
+
+        if (base64Screenshot is not null)
+        {
+            test.Fail(message,
+                MediaEntityBuilder.CreateScreenCaptureFromBase64String(base64Screenshot).Build());
+        }
+        else
+        {
+            test.Fail(message);
+        }
+    }
+
+    public static void LogStep(string message)
+    {
+        _currentTest.Value?.Info(message);
+    }
+
+    public static void LogWarning(string message)
+    {
+        _currentTest.Value?.Warning(message);
+    }
+
+    public static void Flush()
+    {
+        _extent?.Flush();
+    }
+}

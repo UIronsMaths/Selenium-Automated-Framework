@@ -1,0 +1,21 @@
+[2026-06-16 09:33:43 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 09:33:43 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 09:33:46 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 09:36:05 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 09:36:05 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 09:36:07 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 09:38:13 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 09:38:13 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 09:38:16 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 09:43:15 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 09:43:15 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 09:43:23 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 09:50:11 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 09:50:11 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 09:50:15 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 09:50:30 ERR] [chrome] Error flushing report: Could not find a part of the path 'C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\extent\artifacts\extent\TestReport_20260616_095008.html'.
+[2026-06-16 09:50:30 DBG] [chrome]   Step: Browser closed successfully
+[2026-06-16 09:54:59 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 09:55:00 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 09:55:03 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 09:55:18 DBG] [chrome]   Step: Browser closed successfully
