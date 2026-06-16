@@ -10,8 +10,17 @@ public class CartPage
     [FindsBy(How = How.ClassName, Using = "cart_item")]
     private IList<IWebElement> CartItems { get; set; } = null!;
 
+    [FindsBy(How = How.Id, Using = "checkout")]
+    private IWebElement CheckoutButton { get; set; } = null!;
+
+    [FindsBy(How = How.Id, Using = "continue-shopping")]
+    private IWebElement ContinueShoppingButton { get; set; } = null!;
+
+    private readonly IWebDriver Driver;
+
     public CartPage(IWebDriver driver)
     {
+        Driver = driver;
         PageFactory.InitElements(driver, this);
     }
 
@@ -20,4 +29,26 @@ public class CartPage
     public string GetTitle() => PageTitle.Text;
 
     public int GetItemCount() => CartItems?.Count ?? 0;
+
+    public CheckoutStepOnePage ProceedToCheckout()
+    {
+        LogManager.Step("Proceeding to checkout");
+        CheckoutButton.Click();
+
+        var wait = new OpenQA.Selenium.Support.UI.WebDriverWait(Driver, System.TimeSpan.FromSeconds(new TestSettings().ExplicitWaitSeconds));
+        wait.Until(d => d.Url.Contains("checkout-step-one.html"));
+
+        return new CheckoutStepOnePage(Driver);
+    }
+
+    public InventoryPage ContinueShopping()
+    {
+        LogManager.Step("Continuing shopping from cart");
+        ContinueShoppingButton.Click();
+
+        var wait = new OpenQA.Selenium.Support.UI.WebDriverWait(Driver, System.TimeSpan.FromSeconds(new TestSettings().ExplicitWaitSeconds));
+        wait.Until(d => d.Url.Contains("inventory.html"));
+
+        return new InventoryPage(Driver);
+    }
 }

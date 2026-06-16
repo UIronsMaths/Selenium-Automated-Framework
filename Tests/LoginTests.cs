@@ -161,7 +161,7 @@ public class LoginTests : BaseTest
             Assert.That(errorMessage, Is.Not.Empty);
         });
     }
-
+    /*
     [Test]
     [Category("Demo")]
     public void DemoFailingTest_ScreenshotCapture()
@@ -179,4 +179,5 @@ public class LoginTests : BaseTest
             Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"), "This assertion will fail and trigger screenshot capture!");
         });
     }
+    */
 }
