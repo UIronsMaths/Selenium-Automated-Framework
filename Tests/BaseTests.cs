@@ -18,6 +18,8 @@ public abstract class BaseTest
 
     public TestSettings settings = null;
 
+    private IDisposable? _logScope;
+
     [OneTimeSetUp]
     public void OneTimeSetUp()
     {
@@ -30,7 +32,7 @@ public abstract class BaseTest
     [SetUp]
     public void SetUp()
     {
-        var settings = ConfigurationManager.Settings;
+        _logScope = LogManager.BeginTestScope(TestName);
 
         var driver = DriverFactory.Create(settings.Browser, settings.Headless);
         driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(settings.PageLoadTimeoutSeconds);
@@ -95,6 +97,10 @@ public abstract class BaseTest
             {
                 LogManager.Error($"Error flushing report: {ex.Message}");
             }
+
+            // Dispose the per-test log scope last so failure/teardown logs above still get tagged
+            _logScope?.Dispose();
+            _logScope = null;
         }
     }
 
@@ -110,7 +116,6 @@ public abstract class BaseTest
 
         if (!DriverContext.IsInitialised) return;
 
-        var settings = ConfigurationManager.Settings;
         var screenshotPath = ScreenshotUtils.CaptureOnFailure(Driver, TestName);
 
         if (screenshotPath is not null)
@@ -140,9 +145,9 @@ public abstract class BaseTest
     {
         LogManager.Step(description);
 
-        if (ConfigurationManager.Settings.ReportType is "extent" or "both")
+        if (settings.ReportType is "extent" or "both")
             ExtentReportManager.LogStep(description);
-        if(ConfigurationManager.Settings.ReportType is "allure")
+        if(settings.ReportType is "allure" or "both")
         {
             AllureApi.Step(description);
         }

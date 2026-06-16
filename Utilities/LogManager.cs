@@ -1,6 +1,9 @@
 ﻿using Allure.Net.Commons;
 using Serilog;
+using Serilog.Context;
 using Serilog.Core;
+using Serilog.Events;
+using Serilog.Formatting.Compact;
 
 public static class LogManager
 {
@@ -16,9 +19,12 @@ public static class LogManager
         Directory.CreateDirectory(logDirectory);
 
         var logFilePath = Path.Combine(logDirectory, "test-run-.log");
+        var jsonLogFilePath = Path.Combine(logDirectory, "test-run-.json");
 
         return new LoggerConfiguration()
             .MinimumLevel.Debug()
+            .MinimumLevel.Override("OpenQA.Selenium", LogEventLevel.Warning)
+            .Enrich.FromLogContext()
             .Enrich.WithProperty("Browser", settings.Browser)
             .Enrich.WithProperty("BaseUrl", settings.BaseUrl)
             .WriteTo.Console(
@@ -27,6 +33,11 @@ public static class LogManager
                 path: logFilePath,
                 rollingInterval: RollingInterval.Day,
                 outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] [{Browser}] {Message:lj}{NewLine}{Exception}",
+                retainedFileCountLimit: 7)
+            .WriteTo.File(
+                new CompactJsonFormatter(),
+                path: jsonLogFilePath,
+                rollingInterval: RollingInterval.Day,
                 retainedFileCountLimit: 7)
             .CreateLogger();
     }
@@ -63,5 +74,11 @@ public static class LogManager
             Logger.Error(ex, message);
         else
             Logger.Error(message);
+    }
+
+    // New: per-test log scope so every line is tagged with the test name automatically
+    public static IDisposable BeginTestScope(string testName)
+    {
+        return LogContext.PushProperty("TestName", testName);
     }
 }

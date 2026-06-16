@@ -18,6 +18,7 @@ public class LoginPage
     }
     public InventoryPage LoginAs(string username, string password)
     {
+        LogManager.Step("Attempting login");
         Username.Clear();
         Username.SendKeys(username);
         Password.Clear();

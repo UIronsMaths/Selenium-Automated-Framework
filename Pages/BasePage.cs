@@ -33,6 +33,7 @@ public abstract class BasePage
 
     protected void NavigateTo(string url)
     {
+        LogManager.Step($"Navigating to: {url}");
         Driver.Navigate().GoToUrl(url);
     }
 
