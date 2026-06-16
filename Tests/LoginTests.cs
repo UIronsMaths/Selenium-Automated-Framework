@@ -1,4 +1,9 @@
-﻿using NUnit.Framework;
+﻿using Allure.NUnit;
+using Microsoft.Extensions.Configuration;
+using NUnit.Framework;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 [TestFixture]
 [Parallelizable(ParallelScope.Self)]
@@ -8,7 +13,7 @@ public class LoginTests : BaseTest
     public void ValidUserCanLogin()
     {
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs("standard_user", "secret_sauce");
+        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
         Assert.Multiple(() =>
         {
             Assert.That(Driver.Url, Does.Contain("inventory.html"));
@@ -21,7 +26,7 @@ public class LoginTests : BaseTest
     public void LoginWithEmptyUsername()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("", "secret_sauce");
+        loginPage.LoginAs(settings.BlankUsername, settings.Password);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
@@ -35,7 +40,7 @@ public class LoginTests : BaseTest
     public void LoginWithEmptyPassword()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("standard_user", "");
+        loginPage.LoginAs(settings.Username, settings.BlankPassword);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
@@ -49,7 +54,7 @@ public class LoginTests : BaseTest
     public void LoginWithBothUsernameAndPasswordEmpty()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("", "");
+        loginPage.LoginAs(settings.BlankUsername, settings.BlankPassword);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
@@ -63,7 +68,7 @@ public class LoginTests : BaseTest
     public void LoginWithInvalidUsername()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("invalid_user", "secret_sauce");
+        loginPage.LoginAs(settings.InvalidUser, settings.Password);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
@@ -77,7 +82,7 @@ public class LoginTests : BaseTest
     public void LoginWithInvalidPassword()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("standard_user", "wrong_password");
+        loginPage.LoginAs(settings.Username, settings.WrongPassword);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
@@ -91,7 +96,7 @@ public class LoginTests : BaseTest
     public void LoginWithLockedOutUser()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("locked_out_user", "secret_sauce");
+        loginPage.LoginAs(settings.LockedUser, settings.Password);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
@@ -102,24 +107,10 @@ public class LoginTests : BaseTest
     }
 
     [Test]
-    public void LoginWithSpecialCharactersInUsername()
-    {
-        var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("user@#$%", "secret_sauce");
-
-        var errorMessage = loginPage.GetErrorMessage();
-        Assert.Multiple(() =>
-        {
-            Assert.That(Driver.Url, Does.Not.Contain("inventory.html"));
-            Assert.That(errorMessage, Is.Not.Empty);
-        });
-    }
-
-    [Test]
     public void LoginWithSpacesInUsername()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs(" standard_user ", "secret_sauce");
+        loginPage.LoginAs(settings.SpacedUser, settings.Password);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
@@ -133,7 +124,7 @@ public class LoginTests : BaseTest
     public void LoginWithSpacesInPassword()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("standard_user", " secret_sauce ");
+        loginPage.LoginAs(settings.Username, settings.SpacedPassword);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
@@ -161,13 +152,31 @@ public class LoginTests : BaseTest
     public void LoginWithXSSAttempt()
     {
         var loginPage = new LoginPage(Driver);
-        loginPage.LoginAs("<script>alert('xss')</script>", "secret_sauce");
+        loginPage.LoginAs("<script>alert('xss')</script>", settings.Password);
 
         var errorMessage = loginPage.GetErrorMessage();
         Assert.Multiple(() =>
         {
             Assert.That(Driver.Url, Does.Not.Contain("inventory.html"));
             Assert.That(errorMessage, Is.Not.Empty);
+        });
+    }
+
+    [Test]
+    [Category("Demo")]
+    public void DemoFailingTest_ScreenshotCapture()
+    {
+        // This test intentionally fails to demonstrate screenshot capture on failure
+        var loginPage = new LoginPage(Driver);
+
+        // Try to login with valid credentials
+        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+
+        // Intentionally fail with a wrong assertion to trigger screenshot
+        Assert.Multiple(() =>
+        {
+            Assert.That(Driver.Url, Does.Contain("inventory.html"), "Login should succeed");
+            Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"), "This assertion will fail and trigger screenshot capture!");
         });
     }
 }

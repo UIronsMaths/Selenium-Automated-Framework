@@ -1,4 +1,5 @@
-﻿using Serilog;
+﻿using Allure.Net.Commons;
+using Serilog;
 using Serilog.Core;
 
 public static class LogManager
@@ -33,6 +34,7 @@ public static class LogManager
     public static void TestStarted(string testName)
     {
         Logger.Information("=== TEST STARTED: {TestName} ===", testName);
+        //Logger.Information($"{AllureLifecycle.Instance.ResultsDirectory}");
     }
 
     public static void TestPassed(string testName)

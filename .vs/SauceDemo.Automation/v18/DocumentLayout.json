@@ -3,40 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\reporting\\extentreportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:reporting\\extentreportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\tests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:tests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\tests\\smokertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:tests\\smokertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\tests\\basetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:tests\\basetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\core\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:core\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\tests\\inventorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:tests\\inventorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\utilities\\logmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:utilities\\logmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\reporting\\extentreportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:reporting\\extentreportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\tests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:tests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\saucedemo.automation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:saucedemo.automation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\allureconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:allureconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\utilities\\screenshotutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:utilities\\screenshotutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|c:\\users\\450 g8\\documents\\projects\\new selenium framework\\selenium-automated-framework\\pages\\inventorypage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2C30D-C76D-5E7B-3833-0A82EDFAAF28}|SauceDemo.Automation.csproj|solutionrelative:pages\\inventorypage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,32 +54,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DriverFactory.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Core\\DriverFactory.cs",
-              "RelativeDocumentMoniker": "Core\\DriverFactory.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Core\\DriverFactory.cs",
-              "RelativeToolTip": "Core\\DriverFactory.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAWwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LoginTests.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\LoginTests.cs",
+              "RelativeDocumentMoniker": "Tests\\LoginTests.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\LoginTests.cs",
+              "RelativeToolTip": "Tests\\LoginTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T08:48:34.223Z",
+              "WhenOpened": "2026-06-16T13:56:50.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
+              "Title": "SmokerTest.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\SmokerTest.cs",
+              "RelativeDocumentMoniker": "Tests\\SmokerTest.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\SmokerTest.cs",
+              "RelativeToolTip": "Tests\\SmokerTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-16T08:45:41.869Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T13:56:36.855Z",
               "EditorCaption": ""
             },
             {
@@ -82,14 +90,40 @@
               "RelativeDocumentMoniker": "Tests\\BaseTests.cs",
               "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\BaseTests.cs",
               "RelativeToolTip": "Tests\\BaseTests.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAWwFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T08:36:50.814Z",
+              "WhenOpened": "2026-06-16T10:31:59.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "LogManager.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Utilities\\LogManager.cs",
+              "RelativeDocumentMoniker": "Utilities\\LogManager.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Utilities\\LogManager.cs",
+              "RelativeToolTip": "Utilities\\LogManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwCQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T13:17:50.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\InventoryTests.cs",
+              "RelativeDocumentMoniker": "Tests\\InventoryTests.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\InventoryTests.cs",
+              "RelativeToolTip": "Tests\\InventoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T11:53:55.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ExtentReportManager.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Reporting\\ExtentReportManager.cs",
               "RelativeDocumentMoniker": "Reporting\\ExtentReportManager.cs",
@@ -97,72 +131,72 @@
               "RelativeToolTip": "Reporting\\ExtentReportManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T08:35:42.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginTests.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\LoginTests.cs",
-              "RelativeDocumentMoniker": "Tests\\LoginTests.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\LoginTests.cs",
-              "RelativeToolTip": "Tests\\LoginTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T08:35:10.615Z",
+              "WhenOpened": "2026-06-16T13:17:45.896Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SauceDemo.Automation",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\SauceDemo.Automation.csproj",
-              "RelativeDocumentMoniker": "SauceDemo.Automation.csproj",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\SauceDemo.Automation.csproj",
-              "RelativeToolTip": "SauceDemo.Automation.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-16T08:09:44.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BasePage.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Pages\\BasePage.cs",
-              "RelativeDocumentMoniker": "Pages\\BasePage.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Pages\\BasePage.cs",
-              "RelativeToolTip": "Pages\\BasePage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T08:02:48.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "LoginPage.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Pages\\LoginPage.cs",
               "RelativeDocumentMoniker": "Pages\\LoginPage.cs",
               "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Pages\\LoginPage.cs",
               "RelativeToolTip": "Pages\\LoginPage.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABAAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T08:08:41.28Z",
+              "WhenOpened": "2026-06-16T13:17:09.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ScreenshotUtils.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Utilities\\ScreenshotUtils.cs",
-              "RelativeDocumentMoniker": "Utilities\\ScreenshotUtils.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Utilities\\ScreenshotUtils.cs",
-              "RelativeToolTip": "Utilities\\ScreenshotUtils.cs",
+              "Title": "AllureConfig.json",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\AllureConfig.json",
+              "RelativeDocumentMoniker": "AllureConfig.json",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\AllureConfig.json",
+              "RelativeToolTip": "AllureConfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-16T13:14:37.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-16T08:45:41.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BasePage.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Pages\\BasePage.cs",
+              "RelativeDocumentMoniker": "Pages\\BasePage.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Pages\\BasePage.cs",
+              "RelativeToolTip": "Pages\\BasePage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T08:03:08.621Z",
+              "WhenOpened": "2026-06-16T10:34:39.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InventoryPage.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Pages\\InventoryPage.cs",
+              "RelativeDocumentMoniker": "Pages\\InventoryPage.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Pages\\InventoryPage.cs",
+              "RelativeToolTip": "Pages\\InventoryPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T10:32:24.238Z",
               "EditorCaption": ""
             }
           ]

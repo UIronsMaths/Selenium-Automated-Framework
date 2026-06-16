@@ -9,6 +9,8 @@ public class LoginPage
     private IWebElement Password { get; set; } = null!;
     [FindsBy(How = How.Id, Using = "login-button")]
     private IWebElement LoginButton { get; set; } = null!;
+    [FindsBy(How = How.CssSelector, Using = "[data-test='error']")]
+    private IWebElement ErrorMessage { get; set; } = null!;
     public LoginPage(IWebDriver driver)
     {
         this.driver = driver;
@@ -42,5 +44,26 @@ public class LoginPage
         {
             // Other exceptions, log but continue
         }
+    }
+    public string GetErrorMessage()
+    {
+        try
+        {
+            // Wait a bit for error message to appear
+            System.Threading.Thread.Sleep(500);
+            if (ErrorMessage != null && ErrorMessage.Displayed)
+            {
+                return ErrorMessage.Text;
+            }
+        }
+        catch (NoSuchElementException)
+        {
+            // Error element not found
+        }
+        catch
+        {
+            // Other exceptions
+        }
+        return string.Empty;
     }
 }

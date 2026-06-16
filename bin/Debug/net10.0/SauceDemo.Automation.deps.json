@@ -16,8 +16,8 @@
           "Microsoft.Extensions.Configuration.Json": "10.0.9",
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "NUnit": "4.2.2",
-          "Selenium.Support": "4.25.0",
-          "Selenium.WebDriver": "4.25.0",
+          "Selenium.Support": "4.40.0",
+          "Selenium.WebDriver": "4.40.0",
           "Serilog": "4.3.1",
           "Serilog.Sinks.Console": "6.1.1",
           "Serilog.Sinks.File": "7.0.0"
@@ -61,7 +61,7 @@
       },
       "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
         "dependencies": {
-          "Selenium.WebDriver": "4.25.0"
+          "Selenium.WebDriver": "4.40.0"
         },
         "runtime": {
           "lib/net6.0/SeleniumExtras.PageObjects.dll": {
@@ -622,9 +622,9 @@
           }
         }
       },
-      "Selenium.Support/4.25.0": {
+      "Selenium.Support/4.40.0": {
         "dependencies": {
-          "Selenium.WebDriver": "4.25.0"
+          "Selenium.WebDriver": "4.40.0"
         },
         "runtime": {
           "lib/netstandard2.0/WebDriver.Support.dll": {
@@ -633,11 +633,28 @@
           }
         }
       },
-      "Selenium.WebDriver/4.25.0": {
+      "Selenium.WebDriver/4.40.0": {
         "runtime": {
           "lib/net8.0/WebDriver.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.0.0.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/native/selenium-manager": {
+            "rid": "linux",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/selenium-manager": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/native/selenium-manager.exe": {
+            "rid": "win",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -931,19 +948,19 @@
       "path": "razorengine.netcore.nixfix/1.0.1",
       "hashPath": "razorengine.netcore.nixfix.1.0.1.nupkg.sha512"
     },
-    "Selenium.Support/4.25.0": {
+    "Selenium.Support/4.40.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nIWkD1kth4Taq2XgDuvPv2xDpFzm3SODvfmuuTGvYYFYHAteWcOeczwsVMQErLtwKjEwfdGO0B9dwDr+i5ZEkQ==",
-      "path": "selenium.support/4.25.0",
-      "hashPath": "selenium.support.4.25.0.nupkg.sha512"
+      "sha512": "sha512-YgHe6g5h7JIUuECo+a+WEhW1UtaUmQxoY383RWvWtzkiMSEEaRc3LXL3mG6pt4IjtwaN/h1QCzpQ1CFO2hT1qA==",
+      "path": "selenium.support/4.40.0",
+      "hashPath": "selenium.support.4.40.0.nupkg.sha512"
     },
-    "Selenium.WebDriver/4.25.0": {
+    "Selenium.WebDriver/4.40.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0g/9I5ennfL2ZaQoXsfEPj+GcqrKlcVr1yxh3C/Eed/acNZrC38OaXLorsuHdAHiGn+QySV3iz8/hFcOXvVcoA==",
-      "path": "selenium.webdriver/4.25.0",
-      "hashPath": "selenium.webdriver.4.25.0.nupkg.sha512"
+      "sha512": "sha512-y7ESRFracAgUjQEieM42gPdkUEPvffrwmu5XZ4scGCjZ20nJKaJ+qcULegO01g4Chl5+IpVe61mdzXwPM91ddg==",
+      "path": "selenium.webdriver/4.40.0",
+      "hashPath": "selenium.webdriver.4.40.0.nupkg.sha512"
     },
     "Serilog/4.3.1": {
       "type": "package",

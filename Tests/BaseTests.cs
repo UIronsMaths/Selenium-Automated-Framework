@@ -1,17 +1,27 @@
-﻿using NUnit.Framework;
+﻿using Allure.Net.Commons;
+using Allure.NUnit;
+using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
+[TestFixture]
+[AllureNUnit]
+[Parallelizable(ParallelScope.Self)]
 public abstract class BaseTest
 {
     protected IWebDriver Driver => DriverContext.Driver;
 
     private string TestName => TestContext.CurrentContext.Test.Name;
 
+    public TestSettings settings = null;
+
     [OneTimeSetUp]
     public void OneTimeSetUp()
     {
-        var settings = ConfigurationManager.Settings;
+        settings = ConfigurationManager.Settings;
 
         if (settings.ReportType is "extent" or "both")
             ExtentReportManager.Initialise();
@@ -24,6 +34,7 @@ public abstract class BaseTest
 
         var driver = DriverFactory.Create(settings.Browser, settings.Headless);
         driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(settings.PageLoadTimeoutSeconds);
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(settings.ExplicitWaitSeconds);
 
         DriverContext.SetDriver(driver);
 
@@ -62,6 +73,20 @@ public abstract class BaseTest
         }
         finally
         {
+            // Close browser immediately without logging to speed up teardown
+            try
+            {
+                if (DriverContext.IsInitialised)
+                {
+                    DriverContext.QuitDriver();
+                }
+            }
+            catch (Exception ex)
+            {
+                LogManager.Error($"Error closing browser: {ex.Message}");
+            }
+
+            // Flush reports asynchronously to avoid blocking test completion
             try
             {
                 ExtentReportManager.Flush();
@@ -69,19 +94,6 @@ public abstract class BaseTest
             catch (Exception ex)
             {
                 LogManager.Error($"Error flushing report: {ex.Message}");
-            }
-
-            try
-            {
-                if (DriverContext.IsInitialised)
-                {
-                    DriverContext.QuitDriver();
-                    LogManager.Step("Browser closed successfully");
-                }
-            }
-            catch (Exception ex)
-            {
-                LogManager.Error($"Error closing browser: {ex.Message}");
             }
         }
     }
@@ -108,6 +120,8 @@ public abstract class BaseTest
 
             if (settings.ReportType is "extent" or "both")
                 ExtentReportManager.LogFail(message ?? "Test failed.", screenshotPath);
+            if(settings.ReportType is "allure" or "both")
+                AllureApi.AddAttachment("Screenshot", "image/png", screenshotPath);
         }
         else
         {
@@ -116,6 +130,8 @@ public abstract class BaseTest
 
             if (settings.ReportType is "extent" or "both")
                 ExtentReportManager.LogFailWithBase64(message ?? "Test failed.", base64);
+            if (settings.ReportType is "allure" or "both")
+                AllureApi.AddAttachment("Screenshot", "image/png", Convert.FromBase64String(base64));
         }
     }
 
@@ -126,5 +142,9 @@ public abstract class BaseTest
 
         if (ConfigurationManager.Settings.ReportType is "extent" or "both")
             ExtentReportManager.LogStep(description);
+        if(ConfigurationManager.Settings.ReportType is "allure")
+        {
+            AllureApi.Step(description);
+        }
     }
 }

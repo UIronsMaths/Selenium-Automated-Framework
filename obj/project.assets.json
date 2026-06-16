@@ -798,10 +798,10 @@
           "lib/netcoreapp3.1/RazorEngine.NetCore.dll": {}
         }
       },
-      "Selenium.Support/4.25.0": {
+      "Selenium.Support/4.40.0": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "4.25.0"
+          "Selenium.WebDriver": "4.40.0"
         },
         "compile": {
           "lib/netstandard2.0/WebDriver.Support.dll": {
@@ -814,7 +814,7 @@
           }
         }
       },
-      "Selenium.WebDriver/4.25.0": {
+      "Selenium.WebDriver/4.40.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/WebDriver.dll": {
@@ -828,6 +828,20 @@
         },
         "build": {
           "buildTransitive/Selenium.WebDriver.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux/native/selenium-manager": {
+            "assetType": "native",
+            "rid": "linux"
+          },
+          "runtimes/osx/native/selenium-manager": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win/native/selenium-manager.exe": {
+            "assetType": "native",
+            "rid": "win"
+          }
         }
       },
       "Serilog/4.3.1": {
@@ -2062,24 +2076,24 @@
         "razorengine.netcore.nixfix.nuspec"
       ]
     },
-    "Selenium.Support/4.25.0": {
-      "sha512": "nIWkD1kth4Taq2XgDuvPv2xDpFzm3SODvfmuuTGvYYFYHAteWcOeczwsVMQErLtwKjEwfdGO0B9dwDr+i5ZEkQ==",
+    "Selenium.Support/4.40.0": {
+      "sha512": "YgHe6g5h7JIUuECo+a+WEhW1UtaUmQxoY383RWvWtzkiMSEEaRc3LXL3mG6pt4IjtwaN/h1QCzpQ1CFO2hT1qA==",
       "type": "package",
-      "path": "selenium.support/4.25.0",
+      "path": "selenium.support/4.40.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
         "lib/netstandard2.0/WebDriver.Support.dll",
         "lib/netstandard2.0/WebDriver.Support.xml",
-        "selenium.support.4.25.0.nupkg.sha512",
+        "selenium.support.4.40.0.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.25.0": {
-      "sha512": "0g/9I5ennfL2ZaQoXsfEPj+GcqrKlcVr1yxh3C/Eed/acNZrC38OaXLorsuHdAHiGn+QySV3iz8/hFcOXvVcoA==",
+    "Selenium.WebDriver/4.40.0": {
+      "sha512": "y7ESRFracAgUjQEieM42gPdkUEPvffrwmu5XZ4scGCjZ20nJKaJ+qcULegO01g4Chl5+IpVe61mdzXwPM91ddg==",
       "type": "package",
-      "path": "selenium.webdriver/4.25.0",
+      "path": "selenium.webdriver/4.40.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2087,14 +2101,16 @@
         "build/Selenium.WebDriver.targets",
         "buildTransitive/Selenium.WebDriver.targets",
         "icon.png",
+        "lib/net462/WebDriver.dll",
+        "lib/net462/WebDriver.xml",
         "lib/net8.0/WebDriver.dll",
         "lib/net8.0/WebDriver.xml",
         "lib/netstandard2.0/WebDriver.dll",
         "lib/netstandard2.0/WebDriver.xml",
-        "manager/linux/selenium-manager",
-        "manager/macos/selenium-manager",
-        "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.25.0.nupkg.sha512",
+        "runtimes/linux/native/selenium-manager",
+        "runtimes/osx/native/selenium-manager",
+        "runtimes/win/native/selenium-manager.exe",
+        "selenium.webdriver.4.40.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
@@ -2312,8 +2328,8 @@
       "NUnit >= 4.2.2",
       "NUnit.Analyzers >= 4.4.0",
       "NUnit3TestAdapter >= 4.6.0",
-      "Selenium.Support >= 4.25.0",
-      "Selenium.WebDriver >= 4.25.0",
+      "Selenium.Support >= 4.40.0",
+      "Selenium.WebDriver >= 4.40.0",
       "Serilog >= 4.3.1",
       "Serilog.Sinks.Console >= 6.1.1",
       "Serilog.Sinks.File >= 7.0.0",
@@ -2415,11 +2431,11 @@
           },
           "Selenium.Support": {
             "target": "Package",
-            "version": "[4.25.0, )"
+            "version": "[4.40.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.25.0, )"
+            "version": "[4.40.0, )"
           },
           "Serilog": {
             "target": "Package",

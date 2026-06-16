@@ -19,3 +19,1155 @@
 [2026-06-16 09:55:00 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
 [2026-06-16 09:55:03 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
 [2026-06-16 09:55:18 DBG] [chrome]   Step: Browser closed successfully
+[2026-06-16 09:59:24 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 09:59:25 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 09:59:27 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 09:59:31 DBG] [chrome]   Step: Browser closed successfully
+[2026-06-16 10:00:24 ERR] [edge] === TEST FAILED: ValidUserCanLogin — OpenQA.Selenium.WebDriverException : Error starting process: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+  ----> OpenQA.Selenium.WebDriverException : Selenium Manager process exited abnormally with 65 code: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+Standard Output >>
+{
+  "logs": [
+    {
+      "level": "ERROR",
+      "timestamp": 1781600424,
+      "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)"
+    }
+  ],
+  "result": {
+    "code": 65,
+    "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)",
+    "driver_path": "",
+    "browser_path": ""
+  }
+}
+
+<<
+ ===
+[2026-06-16 10:01:09 INF] [Chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:01:09 DBG] [Chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:01:11 INF] [Chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 10:01:19 DBG] [Chrome]   Step: Browser closed successfully
+[2026-06-16 10:01:26 ERR] [Edge] === TEST FAILED: ValidUserCanLogin — OpenQA.Selenium.WebDriverException : Error starting process: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+  ----> OpenQA.Selenium.WebDriverException : Selenium Manager process exited abnormally with 65 code: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+Standard Output >>
+{
+  "logs": [
+    {
+      "level": "ERROR",
+      "timestamp": 1781600486,
+      "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)"
+    }
+  ],
+  "result": {
+    "code": 65,
+    "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)",
+    "driver_path": "",
+    "browser_path": ""
+  }
+}
+
+<<
+ ===
+[2026-06-16 10:01:54 ERR] [Edge] === TEST FAILED: ValidUserCanLogin — OpenQA.Selenium.WebDriverException : Error starting process: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+  ----> OpenQA.Selenium.WebDriverException : Selenium Manager process exited abnormally with 65 code: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+Standard Output >>
+{
+  "logs": [
+    {
+      "level": "ERROR",
+      "timestamp": 1781600514,
+      "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)"
+    }
+  ],
+  "result": {
+    "code": 65,
+    "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)",
+    "driver_path": "",
+    "browser_path": ""
+  }
+}
+
+<<
+ ===
+[2026-06-16 10:02:06 ERR] [Edge] === TEST FAILED: ValidUserCanLogin — OpenQA.Selenium.WebDriverException : Error starting process: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+  ----> OpenQA.Selenium.WebDriverException : Selenium Manager process exited abnormally with 65 code: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+Standard Output >>
+{
+  "logs": [
+    {
+      "level": "ERROR",
+      "timestamp": 1781600526,
+      "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)"
+    }
+  ],
+  "result": {
+    "code": 65,
+    "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)",
+    "driver_path": "",
+    "browser_path": ""
+  }
+}
+
+<<
+ ===
+[2026-06-16 10:05:11 ERR] [firefox] === TEST FAILED: ValidUserCanLogin — OpenQA.Selenium.WebDriverException : Process (pid=20768) unexpectedly closed with status 0 ===
+[2026-06-16 10:07:50 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:07:50 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:07:52 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 10:08:00 DBG] [chrome]   Step: Browser closed successfully
+[2026-06-16 10:11:39 ERR] [edge] === TEST FAILED: ValidUserCanLogin — OpenQA.Selenium.WebDriverException : Error starting process: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+  ----> OpenQA.Selenium.WebDriverException : Selenium Manager process exited abnormally with 65 code: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\selenium-manager\windows\selenium-manager.exe  --browser "MicrosoftEdge" --language-binding csharp --output json
+Standard Output >>
+{
+  "logs": [
+    {
+      "level": "ERROR",
+      "timestamp": 1781601099,
+      "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)"
+    }
+  ],
+  "result": {
+    "code": 65,
+    "message": "error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS)",
+    "driver_path": "",
+    "browser_path": ""
+  }
+}
+
+<<
+ ===
+[2026-06-16 10:13:10 INF] [edge] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:13:10 DBG] [edge]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:13:12 INF] [edge] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 10:13:21 DBG] [edge]   Step: Browser closed successfully
+[2026-06-16 10:13:59 INF] [firefox] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:13:59 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:14:01 INF] [firefox] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 10:14:08 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:20:55 INF] [firefox] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:20:55 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:20:58 INF] [firefox] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:21:04 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:21:12 INF] [firefox] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 10:21:12 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:21:15 INF] [firefox] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 10:21:16 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:21:23 INF] [firefox] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 10:21:23 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:21:25 INF] [firefox] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 10:21:26 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:21:34 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:21:34 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:21:37 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:21:37 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:21:45 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:21:45 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:21:48 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:21:49 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:21:56 INF] [firefox] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 10:21:56 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:21:59 INF] [firefox] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 10:22:00 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:22:07 INF] [firefox] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 10:22:07 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:22:10 INF] [firefox] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 10:22:10 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:22:18 INF] [firefox] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 10:22:18 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:22:20 INF] [firefox] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 10:22:21 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:22:28 INF] [firefox] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 10:22:28 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:22:31 INF] [firefox] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 10:22:32 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:22:39 INF] [firefox] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 10:22:39 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:22:48 ERR] [firefox] === TEST FAILED: LoginWithSpacesInUsername — OpenQA.Selenium.NoSuchWindowException : Browsing context has been discarded ===
+[2026-06-16 10:22:49 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:23:08 INF] [firefox] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:23:08 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:23:11 INF] [firefox] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:23:18 DBG] [firefox]   Step: Browser closed successfully
+[2026-06-16 10:27:06 INF] [firefox] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:27:06 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:27:08 INF] [firefox] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:27:20 INF] [firefox] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 10:27:20 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:27:22 INF] [firefox] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 10:27:28 INF] [firefox] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 10:27:28 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:27:31 INF] [firefox] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 10:27:37 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:27:37 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:27:40 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:27:47 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:27:47 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:27:49 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:27:56 INF] [firefox] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 10:27:56 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:27:58 INF] [firefox] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 10:28:05 INF] [firefox] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 10:28:05 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:28:07 INF] [firefox] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 10:28:13 INF] [firefox] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 10:28:13 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:28:16 INF] [firefox] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 10:28:22 INF] [firefox] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 10:28:22 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:28:24 INF] [firefox] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 10:28:31 INF] [firefox] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 10:28:31 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:28:33 INF] [firefox] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 10:28:40 INF] [firefox] === TEST STARTED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:28:40 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:28:50 INF] [firefox] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:28:50 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:28:53 INF] [firefox] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:29:04 INF] [firefox] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 10:29:04 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:29:06 INF] [firefox] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 10:29:13 INF] [firefox] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 10:29:13 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:29:15 INF] [firefox] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 10:29:22 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:29:22 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:29:25 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:29:37 INF] [firefox] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:29:37 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:29:39 INF] [firefox] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:29:51 INF] [firefox] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 10:29:51 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:29:53 INF] [firefox] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 10:29:59 INF] [firefox] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 10:29:59 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:30:02 INF] [firefox] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 10:30:08 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:30:08 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:30:11 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:30:17 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:30:17 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:30:20 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:30:27 INF] [firefox] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 10:30:27 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:30:29 INF] [firefox] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 10:30:36 INF] [firefox] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 10:30:36 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:30:38 INF] [firefox] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 10:30:44 INF] [firefox] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 10:30:44 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:30:47 INF] [firefox] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 10:30:53 INF] [firefox] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 10:30:53 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:30:55 INF] [firefox] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 10:31:02 INF] [firefox] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 10:31:02 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:31:05 INF] [firefox] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 10:31:11 INF] [firefox] === TEST STARTED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:31:11 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:31:13 INF] [firefox] === TEST PASSED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:31:20 INF] [firefox] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:31:20 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:31:22 INF] [firefox] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:31:29 INF] [firefox] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:31:29 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:31:31 INF] [firefox] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:31:38 INF] [firefox] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 10:31:38 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:31:40 INF] [firefox] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 10:31:46 INF] [firefox] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:31:46 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:31:48 INF] [firefox] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 10:33:15 INF] [firefox] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:33:15 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:33:18 INF] [firefox] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:33:29 INF] [firefox] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 10:33:29 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:33:31 INF] [firefox] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 10:33:38 INF] [firefox] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 10:33:38 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:33:40 INF] [firefox] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 10:33:46 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:33:46 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:33:49 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:33:55 INF] [firefox] === TEST STARTED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:33:55 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:33:58 INF] [firefox] === TEST PASSED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:34:04 INF] [firefox] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 10:34:04 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:34:06 INF] [firefox] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 10:34:13 INF] [firefox] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 10:34:13 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:34:15 INF] [firefox] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 10:34:22 INF] [firefox] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 10:34:22 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:34:24 INF] [firefox] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 10:34:31 INF] [firefox] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 10:34:31 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:34:33 INF] [firefox] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 10:34:39 INF] [firefox] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 10:34:39 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:34:41 INF] [firefox] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 10:34:48 INF] [firefox] === TEST STARTED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:34:48 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:34:50 INF] [firefox] === TEST PASSED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:34:57 INF] [firefox] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:34:57 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:34:59 INF] [firefox] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:35:05 INF] [firefox] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:35:05 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:35:08 INF] [firefox] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:35:14 INF] [firefox] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 10:35:14 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:35:16 INF] [firefox] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 10:35:23 INF] [firefox] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:35:23 DBG] [firefox]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:35:25 INF] [firefox] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 10:36:07 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:36:07 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:09 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:36:15 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 10:36:15 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:17 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 10:36:19 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 10:36:19 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:21 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 10:36:22 INF] [chrome] === TEST STARTED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:36:22 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:25 INF] [chrome] === TEST PASSED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:36:26 INF] [chrome] === TEST STARTED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:36:26 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:29 INF] [chrome] === TEST PASSED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:36:30 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 10:36:30 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:32 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 10:36:33 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 10:36:33 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:35 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 10:36:37 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 10:36:37 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:39 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 10:36:40 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 10:36:40 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:42 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 10:36:44 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 10:36:44 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:46 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 10:36:47 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:36:47 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:49 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:36:51 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:36:51 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:53 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:36:54 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:36:54 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:56 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:36:57 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 10:36:57 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:36:59 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 10:37:01 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:37:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:37:03 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 10:47:48 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:47:48 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:47:50 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:47:57 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 10:47:57 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:47:59 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 10:48:01 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 10:48:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:06 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 10:48:07 INF] [chrome] === TEST STARTED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:48:07 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:10 INF] [chrome] === TEST PASSED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:48:11 INF] [chrome] === TEST STARTED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:48:11 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:13 INF] [chrome] === TEST PASSED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:48:15 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 10:48:15 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:17 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 10:48:18 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 10:48:18 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:20 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 10:48:22 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 10:48:22 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:24 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 10:48:25 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 10:48:25 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:27 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 10:48:29 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 10:48:29 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:31 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 10:48:32 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:48:32 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:34 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:48:35 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:48:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:37 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:48:39 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:48:39 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:41 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:48:42 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 10:48:42 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:44 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 10:48:46 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:48:46 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:48:47 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 10:50:54 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:50:54 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:50:56 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 10:51:02 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 10:51:02 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:05 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 10:51:06 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 10:51:06 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:09 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 10:51:10 INF] [chrome] === TEST STARTED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:51:10 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:13 INF] [chrome] === TEST PASSED: LoginWithExtremelyLongPassword ===
+[2026-06-16 10:51:14 INF] [chrome] === TEST STARTED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:51:14 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:17 INF] [chrome] === TEST PASSED: LoginWithExtremelyLongUsername ===
+[2026-06-16 10:51:18 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 10:51:18 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:21 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 10:51:22 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 10:51:22 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:25 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 10:51:26 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 10:51:26 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:28 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 10:51:30 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 10:51:30 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:32 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 10:51:33 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 10:51:33 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:36 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 10:51:37 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:51:37 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:40 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInPassword ===
+[2026-06-16 10:51:41 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:51:41 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:43 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 10:51:45 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:51:45 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:47 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 10:51:48 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 10:51:48 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:51 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 10:51:52 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 10:51:52 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 10:51:54 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 11:01:22 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 11:01:22 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:01:25 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 11:01:31 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 11:01:31 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:01:34 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 11:01:35 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 11:01:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:01:38 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 11:01:39 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 11:01:39 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:01:42 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 11:01:43 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 11:01:43 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:01:46 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 11:01:47 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 11:01:47 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:01:49 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 11:01:51 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 11:01:51 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:01:53 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 11:01:55 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 11:01:55 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:01:57 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 11:01:59 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 11:01:59 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:02:01 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 11:02:03 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 11:02:03 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:02:05 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 11:02:07 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 11:02:07 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:02:09 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 11:02:11 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 11:02:11 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:02:13 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 11:14:56 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 11:14:56 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:14:58 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 11:14:58 DBG] [chrome]   Step: Screenshot saved to: artifacts/screenshots\DemoFailingTest_ScreenshotCapture_20260616_111458.png
+[2026-06-16 11:15:05 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 11:15:05 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:08 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 11:15:09 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 11:15:09 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:11 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 11:15:13 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 11:15:13 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:15 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 11:15:16 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 11:15:16 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:19 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 11:15:20 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 11:15:20 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:22 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 11:15:24 ERR] [chrome] === TEST FAILED: LoginWithLockedOutUser — OpenQA.Selenium.UnknownErrorException : unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=148.0.7778.216) ===
+[2026-06-16 11:15:25 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 11:15:25 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:28 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 11:15:29 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 11:15:29 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:32 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 11:15:33 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 11:15:33 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:35 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 11:15:37 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 11:15:37 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:39 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 11:15:41 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 11:15:41 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:43 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 11:15:44 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 11:15:44 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:15:47 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 11:24:29 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 11:24:29 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:24:31 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 11:24:31 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_112431.png
+[2026-06-16 11:24:38 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 11:24:38 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:24:40 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 11:24:41 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 11:24:41 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:24:43 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 11:24:44 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 11:24:44 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:24:46 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 11:24:48 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 11:24:48 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:24:50 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 11:24:51 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 11:24:51 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:24:53 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 11:24:54 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 11:24:54 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:24:56 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 11:24:58 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 11:24:58 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:25:00 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 11:25:01 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 11:25:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:25:03 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 11:25:04 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 11:25:04 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:25:06 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 11:25:08 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 11:25:08 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:25:10 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 11:25:11 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 11:25:11 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:25:13 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 11:25:15 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 11:25:15 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:25:16 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 11:27:20 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 11:27:20 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:21 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 11:27:21 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_112721.png
+[2026-06-16 11:27:28 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 11:27:28 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:30 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 11:27:31 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 11:27:31 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:33 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 11:27:35 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 11:27:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:37 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 11:27:38 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 11:27:38 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:40 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 11:27:41 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 11:27:41 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:43 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 11:27:45 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 11:27:45 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:47 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 11:27:48 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 11:27:48 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:50 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 11:27:51 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 11:27:51 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:53 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 11:27:55 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 11:27:55 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:27:57 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 11:27:58 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 11:27:58 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:28:00 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 11:28:01 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 11:28:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:28:04 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 11:28:05 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 11:28:05 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 11:28:06 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 13:03:35 INF] [chrome] === TEST STARTED: AddSameProductMultipleTimes ===
+[2026-06-16 13:03:35 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 13:03:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:03:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:03:39 INF] [chrome] === TEST STARTED: AddSameProductMultipleTimes ===
+[2026-06-16 13:03:39 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:03:39 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 13:03:40 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_130340.png
+[2026-06-16 13:03:42 DBG] [chrome]   Step: Successfully logged in and navigated to inventory page
+[2026-06-16 13:03:42 DBG] [chrome]   Step: Adding same product twice
+[2026-06-16 13:03:43 DBG] [chrome]   Step: Attempting to add same product again
+[2026-06-16 13:03:45 DBG] [chrome]   Step: Verifying product is only added once per action
+[2026-06-16 13:03:45 ERR] [chrome] === TEST FAILED: AddSameProductMultipleTimes —   Product should be in cart after first add
+Assert.That(isInCart, Is.True)
+  Expected: True
+  But was:  False
+ ===
+[2026-06-16 13:03:45 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\AddSameProductMultipleTimes_20260616_130345.png
+[2026-06-16 13:04:01 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 13:04:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:01 INF] [chrome] === TEST STARTED: CanAddAndRemoveMultipleProducts ===
+[2026-06-16 13:04:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:05 INF] [chrome] === TEST STARTED: CanAddAndRemoveMultipleProducts ===
+[2026-06-16 13:04:05 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:06 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 13:04:08 DBG] [chrome]   Step: Successfully logged in and navigated to inventory page
+[2026-06-16 13:04:08 DBG] [chrome]   Step: Adding 4 products to cart
+[2026-06-16 13:04:09 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 13:04:09 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:12 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 13:04:12 ERR] [chrome] === TEST FAILED: CanAddAndRemoveMultipleProducts —   Assert.That(inventoryPage.GetCartItemCount(), Is.EqualTo(4))
+  Expected: 4
+  But was:  0
+ ===
+[2026-06-16 13:04:13 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\CanAddAndRemoveMultipleProducts_20260616_130413.png
+[2026-06-16 13:04:15 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 13:04:15 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:16 INF] [chrome] === TEST STARTED: CanAddMultipleProductsToCart ===
+[2026-06-16 13:04:16 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:20 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 13:04:20 INF] [chrome] === TEST STARTED: CanAddMultipleProductsToCart ===
+[2026-06-16 13:04:20 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:23 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 13:04:23 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:23 DBG] [chrome]   Step: Successfully logged in and navigated to inventory page
+[2026-06-16 13:04:23 DBG] [chrome]   Step: Adding multiple products to cart
+[2026-06-16 13:04:23 DBG] [chrome]   Step: Added Sauce Labs Backpack to cart
+[2026-06-16 13:04:24 DBG] [chrome]   Step: Added Sauce Labs Bolt T-Shirt to cart
+[2026-06-16 13:04:24 DBG] [chrome]   Step: Added Sauce Labs Onesie to cart
+[2026-06-16 13:04:24 DBG] [chrome]   Step: Verifying all products were added to cart
+[2026-06-16 13:04:26 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 13:04:29 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 13:04:29 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:32 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 13:04:33 ERR] [chrome] === TEST FAILED: CanAddMultipleProductsToCart — Multiple failures or warnings in test:
+  1)   Sauce Labs Backpack should be in cart
+Assert.That(inventoryPage.IsProductInCart(product), Is.True)
+  Expected: True
+  But was:  False
+
+  2)   Sauce Labs Bolt T-Shirt should be in cart
+Assert.That(inventoryPage.IsProductInCart(product), Is.True)
+  Expected: True
+  But was:  False
+
+  3)   Sauce Labs Onesie should be in cart
+Assert.That(inventoryPage.IsProductInCart(product), Is.True)
+  Expected: True
+  But was:  False
+
+  4)   Cart should contain 3 items
+Assert.That(inventoryPage.GetCartItemCount(), Is.EqualTo(3))
+  Expected: 3
+  But was:  0
+
+ ===
+[2026-06-16 13:04:33 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\CanAddMultipleProductsToCart_20260616_130433.png
+[2026-06-16 13:04:35 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 13:04:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:37 INF] [chrome] === TEST STARTED: CanAddProductToCartFromDetailsPage ===
+[2026-06-16 13:04:37 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:39 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 13:04:40 INF] [chrome] === TEST STARTED: CanAddProductToCartFromDetailsPage ===
+[2026-06-16 13:04:40 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:43 DBG] [chrome]   Step: Successfully logged in and navigated to inventory page
+[2026-06-16 13:04:43 DBG] [chrome]   Step: Clicking on product to view details
+[2026-06-16 13:04:43 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 13:04:43 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:43 DBG] [chrome]   Step: Adding product from details page
+[2026-06-16 13:04:44 DBG] [chrome]   Step: Going back to inventory
+[2026-06-16 13:04:46 ERR] [chrome] === TEST FAILED: CanAddProductToCartFromDetailsPage — OpenQA.Selenium.NoSuchElementException : Could not find element by: By.XPath: .//button[contains(text(), 'Back')]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception ===
+[2026-06-16 13:04:46 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\CanAddProductToCartFromDetailsPage_20260616_130446.png
+[2026-06-16 13:04:48 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 13:04:50 INF] [chrome] === TEST STARTED: CanAddSingleProductToCart ===
+[2026-06-16 13:04:50 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:54 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 13:04:54 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:56 INF] [chrome] === TEST STARTED: CanAddSingleProductToCart ===
+[2026-06-16 13:04:56 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:04:59 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 13:04:59 DBG] [chrome]   Step: Successfully logged in and navigated to inventory page
+[2026-06-16 13:04:59 DBG] [chrome]   Step: Adding product 'Sauce Labs Backpack' to cart
+[2026-06-16 13:04:59 DBG] [chrome]   Step: Verifying product was added to cart
+[2026-06-16 13:05:02 INF] [chrome] === TEST STARTED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 13:05:02 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:03 ERR] [chrome] === TEST FAILED: CanAddSingleProductToCart — Multiple failures or warnings in test:
+  1)   Product should be in cart
+Assert.That(inventoryPage.IsProductInCart("Sauce Labs Backpack"), Is.True)
+  Expected: True
+  But was:  False
+
+  2)   Cart count should be 1
+Assert.That(inventoryPage.GetCartItemCount(), Is.EqualTo(1))
+  Expected: 1
+  But was:  0
+
+ ===
+[2026-06-16 13:05:04 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\CanAddSingleProductToCart_20260616_130504.png
+[2026-06-16 13:05:05 INF] [chrome] === TEST PASSED: LoginWithSpecialCharactersInUsername ===
+[2026-06-16 13:05:07 INF] [chrome] === TEST STARTED: CanContinueShoppingFromCart ===
+[2026-06-16 13:05:07 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:08 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 13:05:08 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:11 INF] [chrome] === TEST STARTED: CanContinueShoppingFromCart ===
+[2026-06-16 13:05:11 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:12 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 13:05:14 DBG] [chrome]   Step: Successfully logged in and navigated to inventory page
+[2026-06-16 13:05:14 DBG] [chrome]   Step: Adding product and navigating to cart
+[2026-06-16 13:05:14 DBG] [chrome]   Step: Clicking continue shopping
+[2026-06-16 13:05:16 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 13:05:16 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:16 ERR] [chrome] === TEST FAILED: CanContinueShoppingFromCart — OpenQA.Selenium.NoSuchElementException : Could not find element by: By.XPath: .//button[contains(text(), 'Continue Shopping')]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception ===
+[2026-06-16 13:05:17 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\CanContinueShoppingFromCart_20260616_130517.png
+[2026-06-16 13:05:20 INF] [chrome] === TEST STARTED: CanGetProductPrices ===
+[2026-06-16 13:05:20 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:20 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 13:05:26 INF] [chrome] === TEST STARTED: CanGetProductPrices ===
+[2026-06-16 13:05:26 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:26 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 13:05:26 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:29 DBG] [chrome]   Step: Successfully logged in and navigated to inventory page
+[2026-06-16 13:05:29 DBG] [chrome]   Step: Retrieving all product prices
+[2026-06-16 13:05:29 DBG] [chrome]   Step: Verifying prices are valid: 29.99, $9.99, $15.99, $49.99, $7.99, $15.99
+[2026-06-16 13:05:29 INF] [chrome] === TEST PASSED: CanGetProductPrices ===
+[2026-06-16 13:05:30 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 13:05:31 INF] [chrome] === TEST STARTED: CanHandleEmptyCart ===
+[2026-06-16 13:05:31 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:35 INF] [chrome] === TEST STARTED: CanHandleEmptyCart ===
+[2026-06-16 13:05:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:05:39 DBG] [chrome]   Step: Successfully logged in and navigated to inventory page
+[2026-06-16 13:05:39 DBG] [chrome]   Step: Cart should be empty on initial inventory page
+[2026-06-16 13:29:44 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 13:29:44 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:29:49 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   Login should succeed
+Assert.That(Driver.Url, Does.Contain("inventory.html"))
+  Expected: String containing "inventory.html"
+  But was:  "https://www.saucedemo.com/"
+ ===
+[2026-06-16 13:29:49 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_132949.png
+[2026-06-16 13:30:00 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 13:30:00 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:02 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 13:30:04 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 13:30:04 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:07 ERR] [chrome] === TEST FAILED: LoginWithEmptyPassword —   Assert.That(errorMessage, Does.Contain("Password is required"))
+  Expected: String containing "Password is required"
+  But was:  "Epic sadface: Username is required"
+ ===
+[2026-06-16 13:30:07 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\LoginWithEmptyPassword_20260616_133007.png
+[2026-06-16 13:30:09 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 13:30:09 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:12 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 13:30:14 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 13:30:14 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:16 ERR] [chrome] === TEST FAILED: LoginWithInvalidPassword —   Assert.That(errorMessage, Does.Contain("Username and password do not match"))
+  Expected: String containing "Username and password do not match"
+  But was:  "Epic sadface: Username is required"
+ ===
+[2026-06-16 13:30:16 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\LoginWithInvalidPassword_20260616_133016.png
+[2026-06-16 13:30:18 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 13:30:18 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:21 ERR] [chrome] === TEST FAILED: LoginWithInvalidUsername —   Assert.That(errorMessage, Does.Contain("Username and password do not match"))
+  Expected: String containing "Username and password do not match"
+  But was:  "Epic sadface: Username is required"
+ ===
+[2026-06-16 13:30:21 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\LoginWithInvalidUsername_20260616_133021.png
+[2026-06-16 13:30:23 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 13:30:23 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:25 ERR] [chrome] === TEST FAILED: LoginWithLockedOutUser —   Assert.That(errorMessage, Does.Contain("locked out"))
+  Expected: String containing "locked out"
+  But was:  "Epic sadface: Username is required"
+ ===
+[2026-06-16 13:30:25 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\LoginWithLockedOutUser_20260616_133025.png
+[2026-06-16 13:30:27 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 13:30:27 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:30 ERR] [chrome] === TEST FAILED: LoginWithSpacesInPassword —   Assert.That(errorMessage, Does.Contain("Username and password do not match"))
+  Expected: String containing "Username and password do not match"
+  But was:  "Epic sadface: Username is required"
+ ===
+[2026-06-16 13:30:30 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\LoginWithSpacesInPassword_20260616_133030.png
+[2026-06-16 13:30:32 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 13:30:32 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:35 ERR] [chrome] === TEST FAILED: LoginWithSpacesInUsername —   Assert.That(errorMessage, Does.Contain("Username and password do not match"))
+  Expected: String containing "Username and password do not match"
+  But was:  "Epic sadface: Username is required"
+ ===
+[2026-06-16 13:30:35 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\LoginWithSpacesInUsername_20260616_133035.png
+[2026-06-16 13:30:37 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 13:30:37 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:40 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 13:30:42 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 13:30:42 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:44 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 13:30:46 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 13:30:46 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:30:50 ERR] [chrome] === TEST FAILED: ValidUserCanLogin —   Assert.That(Driver.Url, Does.Contain("inventory.html"))
+  Expected: String containing "inventory.html"
+  But was:  "https://www.saucedemo.com/"
+ ===
+[2026-06-16 13:30:50 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\ValidUserCanLogin_20260616_133050.png
+[2026-06-16 13:45:28 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 13:45:28 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:45:30 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 13:45:31 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_134531.png
+[2026-06-16 13:45:41 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 13:45:41 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:45:44 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 13:45:46 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 13:45:46 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:45:49 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 13:45:51 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 13:45:51 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:45:54 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 13:45:55 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 13:45:55 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:45:58 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 13:46:00 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 13:46:00 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:46:03 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 13:46:04 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 13:46:04 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:46:07 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 13:46:09 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 13:46:09 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:46:12 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 13:46:14 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 13:46:14 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:46:17 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 13:46:19 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 13:46:19 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:46:22 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 13:46:24 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 13:46:24 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:46:27 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 13:46:29 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 13:46:29 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 13:46:31 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 14:11:44 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 14:11:44 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:11:47 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 14:11:47 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_141147.png
+[2026-06-16 14:11:56 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:11:56 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:11:59 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:12:01 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 14:12:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:03 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 14:12:05 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 14:12:05 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:08 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 14:12:09 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 14:12:09 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:12 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 14:12:14 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 14:12:14 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:16 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 14:12:18 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 14:12:18 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:20 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 14:12:22 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 14:12:22 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:25 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 14:12:26 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 14:12:26 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:29 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 14:12:31 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:12:31 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:33 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:12:35 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 14:12:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:37 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 14:12:39 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 14:12:39 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:12:41 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 14:19:01 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 14:19:01 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:03 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 14:19:03 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_141903.png
+[2026-06-16 14:19:13 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:19:13 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:13 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:15 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:19:17 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 14:19:17 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:17 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:20 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 14:19:21 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 14:19:21 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:21 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:24 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 14:19:25 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 14:19:25 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:25 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:28 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 14:19:30 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 14:19:30 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:30 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:32 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 14:19:34 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 14:19:34 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:34 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:36 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 14:19:38 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 14:19:38 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:38 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:40 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 14:19:42 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 14:19:42 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:42 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:45 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 14:19:47 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:19:47 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:47 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:49 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:19:51 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 14:19:51 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:51 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:53 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 14:19:55 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 14:19:55 INF] [chrome] C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\allure-results
+[2026-06-16 14:19:55 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:19:57 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 14:22:38 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 14:22:38 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:22:40 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 14:22:40 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_142240.png
+[2026-06-16 14:22:49 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:22:49 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:22:51 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:22:53 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 14:22:53 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:22:55 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 14:22:57 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 14:22:57 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:00 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 14:23:01 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 14:23:01 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:04 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 14:23:05 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 14:23:05 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:08 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 14:23:10 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 14:23:10 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:12 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 14:23:14 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 14:23:14 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:16 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 14:23:18 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 14:23:18 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:21 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 14:23:22 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:23:22 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:25 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:23:26 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 14:23:26 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:29 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 14:23:31 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 14:23:31 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:23:33 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 14:29:27 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 14:29:27 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:29:30 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 14:29:30 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_142930.png
+[2026-06-16 14:29:39 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:29:39 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:29:41 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:29:43 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 14:29:43 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:29:45 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 14:29:47 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 14:29:47 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:29:50 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 14:29:51 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 14:29:51 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:29:54 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 14:29:55 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 14:29:55 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:29:58 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 14:29:59 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 14:29:59 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:30:02 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 14:30:04 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 14:30:04 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:30:06 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 14:30:08 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 14:30:08 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:30:10 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 14:30:12 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:30:12 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:30:15 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:30:16 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 14:30:16 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:30:19 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 14:30:20 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 14:30:20 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:30:22 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 14:59:08 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 14:59:08 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:10 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 14:59:10 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_145910.png
+[2026-06-16 14:59:22 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:59:22 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:24 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 14:59:26 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 14:59:26 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:28 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 14:59:30 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 14:59:30 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:33 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 14:59:35 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 14:59:35 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:38 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 14:59:40 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 14:59:40 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:43 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 14:59:45 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 14:59:45 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:48 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 14:59:50 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 14:59:50 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:53 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 14:59:55 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 14:59:55 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 14:59:57 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 14:59:59 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 14:59:59 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:00:02 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 15:00:04 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 15:00:04 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:00:06 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 15:00:08 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 15:00:08 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:00:10 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===
+[2026-06-16 15:13:33 INF] [chrome] === TEST STARTED: DemoFailingTest_ScreenshotCapture ===
+[2026-06-16 15:13:33 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:13:35 ERR] [chrome] === TEST FAILED: DemoFailingTest_ScreenshotCapture —   This assertion will fail and trigger screenshot capture!
+Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Wrong Title"))
+  Expected string length 11 but was 8. Strings differ at index 0.
+  Expected: "Wrong Title"
+  But was:  "Products"
+  -----------^
+ ===
+[2026-06-16 15:13:35 DBG] [chrome]   Step: Screenshot saved to: C:\Users\450 G8\Documents\Projects\New Selenium Framework\Selenium-Automated-Framework\bin\Debug\net10.0\artifacts\screenshots\DemoFailingTest_ScreenshotCapture_20260616_151335.png
+[2026-06-16 15:13:45 INF] [chrome] === TEST STARTED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 15:13:45 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:13:47 INF] [chrome] === TEST PASSED: LoginWithBothUsernameAndPasswordEmpty ===
+[2026-06-16 15:13:49 INF] [chrome] === TEST STARTED: LoginWithEmptyPassword ===
+[2026-06-16 15:13:49 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:13:52 INF] [chrome] === TEST PASSED: LoginWithEmptyPassword ===
+[2026-06-16 15:13:53 INF] [chrome] === TEST STARTED: LoginWithEmptyUsername ===
+[2026-06-16 15:13:53 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:13:56 INF] [chrome] === TEST PASSED: LoginWithEmptyUsername ===
+[2026-06-16 15:13:58 INF] [chrome] === TEST STARTED: LoginWithInvalidPassword ===
+[2026-06-16 15:13:58 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:14:00 INF] [chrome] === TEST PASSED: LoginWithInvalidPassword ===
+[2026-06-16 15:14:02 INF] [chrome] === TEST STARTED: LoginWithInvalidUsername ===
+[2026-06-16 15:14:02 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:14:05 INF] [chrome] === TEST PASSED: LoginWithInvalidUsername ===
+[2026-06-16 15:14:06 INF] [chrome] === TEST STARTED: LoginWithLockedOutUser ===
+[2026-06-16 15:14:06 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:14:09 INF] [chrome] === TEST PASSED: LoginWithLockedOutUser ===
+[2026-06-16 15:14:11 INF] [chrome] === TEST STARTED: LoginWithSpacesInPassword ===
+[2026-06-16 15:14:11 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:14:13 INF] [chrome] === TEST PASSED: LoginWithSpacesInPassword ===
+[2026-06-16 15:14:15 INF] [chrome] === TEST STARTED: LoginWithSpacesInUsername ===
+[2026-06-16 15:14:15 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:14:18 INF] [chrome] === TEST PASSED: LoginWithSpacesInUsername ===
+[2026-06-16 15:14:19 INF] [chrome] === TEST STARTED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 15:14:19 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:14:22 INF] [chrome] === TEST PASSED: LoginWithSQLInjectionAttempt ===
+[2026-06-16 15:14:23 INF] [chrome] === TEST STARTED: LoginWithXSSAttempt ===
+[2026-06-16 15:14:23 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:14:26 INF] [chrome] === TEST PASSED: LoginWithXSSAttempt ===
+[2026-06-16 15:14:28 INF] [chrome] === TEST STARTED: ValidUserCanLogin ===
+[2026-06-16 15:14:28 DBG] [chrome]   Step: Navigating to https://www.saucedemo.com/
+[2026-06-16 15:14:30 INF] [chrome] === TEST PASSED: ValidUserCanLogin ===

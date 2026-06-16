@@ -22,7 +22,9 @@ public static class ScreenshotUtils
             var fullPath = Path.Combine(targetDir, fileName);
 
             screenshot.SaveAsFile(fullPath);
-            return fullPath;
+
+            // Return the absolute path to ensure Extent Report can locate it
+            return Path.GetFullPath(fullPath);
         }
         catch (Exception ex)
         {
