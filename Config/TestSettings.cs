@@ -21,4 +21,5 @@
     public string ScreenshotDirectory { get; set; } = "artifacts/screenshots";
     public string ExtentReportDirectory { get; set; } = "artifacts/extent";
     public string LogDirectory { get; set; } = "artifacts/logs";
+    public string BaseDirectory { get; set; } = string.Empty;
 }

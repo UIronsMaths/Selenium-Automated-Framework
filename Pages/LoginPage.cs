@@ -16,7 +16,7 @@ public class LoginPage
         this.driver = driver;
         PageFactory.InitElements(driver, this);
     }
-    public InventoryPage LoginAs(string username, string password)
+    public void LoginAs(string username, string password)
     {
         LogManager.Step("Attempting login");
         Username.Clear();
@@ -25,7 +25,7 @@ public class LoginPage
         Password.SendKeys(password);
         LoginButton.Click();
         HandleBrowserAlert();
-        return new InventoryPage(driver);
+        //return new InventoryPage(driver);
     }
     private void HandleBrowserAlert()
     {

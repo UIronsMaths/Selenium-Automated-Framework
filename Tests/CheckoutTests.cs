@@ -11,7 +11,8 @@ public class CheckoutTests : BaseTest
         LogStep("ContinueShoppingFromCartReturnsToInventory: start");
 
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         var first = inventoryPage.GetItemNames().FirstOrDefault();
         Assert.That(first, Is.Not.Null.And.Not.Empty);
@@ -38,7 +39,8 @@ public class CheckoutTests : BaseTest
         LogStep("CancelCheckoutAtStepOneReturnsToCart: start");
 
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         var first = inventoryPage.GetItemNames().FirstOrDefault();
         Assert.That(first, Is.Not.Null.And.Not.Empty);
@@ -65,7 +67,8 @@ public class CheckoutTests : BaseTest
         LogStep("CompleteCheckoutFlowFinishesAndBackHome: start");
 
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         var first = inventoryPage.GetItemNames().FirstOrDefault();
         Assert.That(first, Is.Not.Null.And.Not.Empty);

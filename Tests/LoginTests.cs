@@ -13,7 +13,8 @@ public class LoginTests : BaseTest
     public void ValidUserCanLogin()
     {
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
         Assert.Multiple(() =>
         {
             Assert.That(Driver.Url, Does.Contain("inventory.html"));
@@ -180,4 +181,66 @@ public class LoginTests : BaseTest
         });
     }
     */
+
+    [Test]
+    public void LoginWithJsonData()
+    {
+        var users = JsonReader.ReadUsers();
+        foreach (var user in users)
+        {
+            Driver.Navigate().GoToUrl(settings.BaseUrl);
+            var loginPage = new LoginPage(Driver);
+            loginPage.LoginAs(user.Username, user.Password);
+
+            if (user.Expected == "success")
+            {
+                var inventoryPage = new InventoryPage(Driver);
+                Assert.Multiple(() =>
+                {
+                    Assert.That(Driver.Url, Does.Contain("inventory.html"));
+                    Assert.That(inventoryPage.IsDisplayed(), Is.True);
+                    Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Products"));
+                });
+            }
+            else
+            {
+                Assert.Multiple(() =>
+                {
+                    Assert.That(Driver.Url, Does.Not.Contain("inventory.html"));
+                    Assert.That(loginPage.GetErrorMessage(), Is.Not.Empty);
+                });
+            }
+        }
+    }
+
+    [Test]
+    public void LoginWithCsvData()
+    {
+        var users = CsvUserReader.ReadCsv();
+        foreach (var user in users)
+        {
+            Driver.Navigate().GoToUrl(settings.BaseUrl);
+            var loginPage = new LoginPage(Driver);
+            loginPage.LoginAs(user.Username, user.Password);
+
+            if (user.Expected == "success")
+            {
+                var inventoryPage = new InventoryPage(Driver);
+                Assert.Multiple(() =>
+                {
+                    Assert.That(Driver.Url, Does.Contain("inventory.html"));
+                    Assert.That(inventoryPage.IsDisplayed(), Is.True);
+                    Assert.That(inventoryPage.GetTitle(), Is.EqualTo("Products"));
+                });
+            }
+            else
+            {
+                Assert.Multiple(() =>
+                {
+                    Assert.That(Driver.Url, Does.Not.Contain("inventory.html"));
+                    Assert.That(loginPage.GetErrorMessage(), Is.Not.Empty);
+                });
+            }
+        }
+    }
 }

@@ -14,7 +14,8 @@ public class InventoryTests : BaseTest
 
         var loginPage = new LoginPage(Driver);
         LogStep("Logging in with valid credentials");
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         LogStep("Verifying inventory page is displayed and contains items");
 
@@ -43,7 +44,8 @@ public class InventoryTests : BaseTest
     {
         LogStep("AddItemToCart: start");
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         var first = inventoryPage.GetItemNames().FirstOrDefault();
         Assert.That(first, Is.Not.Null.And.Not.Empty, "No item name available to add");
@@ -61,7 +63,8 @@ public class InventoryTests : BaseTest
     {
         LogStep("RemoveItemFromCart: start");
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         var first = inventoryPage.GetItemNames().FirstOrDefault();
         Assert.That(first, Is.Not.Null.And.Not.Empty, "No item name available to remove");
@@ -85,7 +88,8 @@ public class InventoryTests : BaseTest
     {
         LogStep("FilterByNameAndVerifyOrder: start");
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         // Sort A->Z
         inventoryPage.SortByNameAsc();
@@ -107,7 +111,9 @@ public class InventoryTests : BaseTest
     {
         LogStep("FilterByPriceAndVerifyOrder: start");
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        //var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         inventoryPage.SortByPriceLowToHigh();
         LogStep("Sorted by price low->high");
@@ -127,7 +133,8 @@ public class InventoryTests : BaseTest
     {
         LogStep("CanNavigateToCartFromInventory: start");
         var loginPage = new LoginPage(Driver);
-        var inventoryPage = loginPage.LoginAs(settings.Username, settings.Password);
+        loginPage.LoginAs(settings.Username, settings.Password);
+        var inventoryPage = new InventoryPage(Driver);
 
         // Ensure at least one item in cart to validate cart page contents
         var first = inventoryPage.GetItemNames().FirstOrDefault();
