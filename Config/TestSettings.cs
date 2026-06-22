@@ -1,11 +1,11 @@
 ﻿public class TestSettings
 {
     public string BaseUrl { get; set; } = string.Empty;
-    public string Browser { get; set; } = "chrome";
+    public string Browser { get; set; } = string.Empty;
     public bool Headless { get; set; } = false;
-    public int ExplicitWaitSeconds { get; set; } = 10;
+    public int ExplicitWaitSeconds { get; set; } = 2;
     public int PageLoadTimeoutSeconds { get; set; } = 30;
-    public string ReportType { get; set; } = "both";
+    public string ReportType { get; set; } = string.Empty;
     public string Username { get; set; } = string.Empty;
     public string BlankUsername {  get; set; }  = string.Empty;
     public string LockedUser {  get; set; } = string.Empty;
@@ -18,8 +18,9 @@
     public string ValidBuyerFN { get; set; } = string.Empty;
     public string ValidBuyerLN { get; set; } = string.Empty;
     public string ValidZipCode { get; set; } = string.Empty;
-    public string ScreenshotDirectory { get; set; } = "artifacts/screenshots";
-    public string ExtentReportDirectory { get; set; } = "artifacts/extent";
-    public string LogDirectory { get; set; } = "artifacts/logs";
-    public string BaseDirectory { get; set; } = string.Empty;
+    public string ScreenshotDirectory { get; set; } = string.Empty;
+    public string ExtentReportDirectory { get; set; } = string.Empty;
+    public string LogDirectory { get; set; } = string.Empty;
+    public string AllureDirectory { get; set; } = string.Empty;
+    public string BaseDirectory { get; set;  } = string.Empty;
 }

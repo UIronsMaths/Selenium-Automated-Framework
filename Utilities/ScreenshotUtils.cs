@@ -2,7 +2,7 @@
 
 public static class ScreenshotUtils
 {
-    private static string DefaultDirectory => ConfigurationManager.Settings.ScreenshotDirectory;
+    private static string DefaultDirectory => ArtifactPaths.Screenshots;
 
     public static string? CaptureOnFailure(IWebDriver driver, string testName)
     {
