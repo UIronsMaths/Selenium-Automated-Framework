@@ -1,6 +1,8 @@
 ﻿using Allure.Net.Commons;
 using Serilog;
 using Serilog.Context;
+using System.Threading;
+using System.Collections.Generic;
 using Serilog.Core;
 using Serilog.Events;
 using Serilog.Formatting.Compact;
@@ -10,6 +12,9 @@ public static class LogManager
     private static readonly Lazy<ILogger> _logger = new Lazy<ILogger>(CreateLogger);
 
     public static ILogger Logger => _logger.Value;
+
+    // Per-test expected value stored in AsyncLocal so it is isolated per logical test execution
+    private static readonly AsyncLocal<string?> _expected = new AsyncLocal<string?>();
 
     private static ILogger CreateLogger()
     {
@@ -28,11 +33,11 @@ public static class LogManager
             .Enrich.WithProperty("Browser", settings.Browser)
             .Enrich.WithProperty("BaseUrl", settings.BaseUrl)
             .WriteTo.Console(
-                outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}")
+                outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] [Test:{TestName}] [Id:{TestId}] [T:{ThreadId}] [B:{Browser}] {Message:lj}{NewLine}{Exception}")
             .WriteTo.File(
                 path: logFilePath,
                 rollingInterval: RollingInterval.Day,
-                outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] [{Browser}] {Message:lj}{NewLine}{Exception}",
+                outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] [Test:{TestName}] [Id:{TestId}] [T:{ThreadId}] [B:{Browser}] {Message:lj}{NewLine}{Exception}",
                 retainedFileCountLimit: 7)
             .WriteTo.File(
                 new CompactJsonFormatter(),
@@ -45,7 +50,6 @@ public static class LogManager
     public static void TestStarted(string testName)
     {
         Logger.Information("=== TEST STARTED: {TestName} ===", testName);
-        //Logger.Information($"{AllureLifecycle.Instance.ResultsDirectory}");
     }
 
     public static void TestPassed(string testName)
@@ -79,6 +83,61 @@ public static class LogManager
     // New: per-test log scope so every line is tagged with the test name automatically
     public static IDisposable BeginTestScope(string testName)
     {
+        // Back-compat overload: push only TestName. Prefer BeginTestScope(testName, testId, browser)
         return LogContext.PushProperty("TestName", testName);
+    }
+
+    // New overload: push multiple properties (TestName, TestId, ThreadId, Browser) so all logs
+    // automatically include test metadata. Returns an IDisposable that will pop all properties.
+    public static IDisposable BeginTestScope(string testName, string testId, string browser)
+    {
+        var disposables = new List<IDisposable>
+        {
+            LogContext.PushProperty("TestName", testName),
+            LogContext.PushProperty("TestId", testId),
+            LogContext.PushProperty("Browser", browser ?? string.Empty),
+            LogContext.PushProperty("ThreadId", Thread.CurrentThread.ManagedThreadId)
+        };
+
+        return new CompositeDisposable(disposables);
+    }
+
+    // Record the expected outcome for the current test and log it.
+    public static void SetExpected(string expected)
+    {
+        _expected.Value = expected;
+        Logger.Information("=== EXPECTED: {Expected} ===", expected);
+    }
+
+    // Record/log the actual outcome for the current test. Includes previously recorded expected value if any.
+    public static void SetActual(string actual)
+    {
+        var expected = _expected.Value ?? string.Empty;
+        Logger.Information("=== ACTUAL: {Actual} ===", actual);
+        // Clear expected after logging
+        _expected.Value = null;
+    }
+
+    // Helper composite disposable to dispose multiple LogContext pushes as one scope
+    private class CompositeDisposable : IDisposable
+    {
+        private readonly List<IDisposable> _items;
+        private bool _disposed;
+
+        public CompositeDisposable(List<IDisposable> items)
+        {
+            _items = items;
+        }
+
+        public void Dispose()
+        {
+            if (_disposed) return;
+            // dispose in reverse order
+            for (int i = _items.Count - 1; i >= 0; i--)
+            {
+                try { _items[i].Dispose(); } catch { }
+            }
+            _disposed = true;
+        }
     }
 }

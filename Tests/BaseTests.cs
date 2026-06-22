@@ -32,7 +32,8 @@ public abstract class BaseTest
     [SetUp]
     public void SetUp()
     {
-        _logScope = LogManager.BeginTestScope(TestName);
+        // Push a per-test logging scope with metadata: TestName, TestId, Browser
+        _logScope = LogManager.BeginTestScope(TestName, TestContext.CurrentContext.Test.ID, settings?.Browser ?? "");
 
         var driver = DriverFactory.Create(settings.Browser, settings.Headless);
         driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(settings.PageLoadTimeoutSeconds);
@@ -59,6 +60,7 @@ public abstract class BaseTest
         {
             if (status == TestStatus.Failed)
             {
+                // Perform failure handling (logging, screenshots, attachments)
                 HandleTestFailure(message);
             }
             else
@@ -98,10 +100,27 @@ public abstract class BaseTest
                 LogManager.Error($"Error flushing report: {ex.Message}");
             }
 
+            // Finally: log the actual result as one of the last things in the test scope
+            try
+            {
+                var finalStatus = status == TestStatus.Failed ? $"FAILED: {message}" : "PASSED";
+                LogManager.SetActual(finalStatus);
+            }
+            catch (Exception ex)
+            {
+                LogManager.Error($"Error logging final actual result: {ex.Message}");
+            }
+
             // Dispose the per-test log scope last so failure/teardown logs above still get tagged
             _logScope?.Dispose();
             _logScope = null;
         }
+    }
+
+    // Helper for tests to declare the expected outcome at the start of the test
+    protected void Expect(string expected)
+    {
+        LogManager.SetExpected(expected);
     }
 
     [OneTimeTearDown]

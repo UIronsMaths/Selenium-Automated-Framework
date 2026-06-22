@@ -2,39 +2,42 @@
 using System;
 using System.IO;
 
-namespace SauceDemo_Automation.Tests
+[SetUpFixture]
+public class GlobalSetup
 {
-    [SetUpFixture]
-    public class GlobalSetup
+    [OneTimeSetUp]
+    public void OneTimeSetUp()
     {
-        [OneTimeSetUp]
-        public void OneTimeSetUp()
+        Console.WriteLine("[GlobalSetup] Starting artifact cleanup...");
+
+        ClearDirectory(ArtifactPaths.Screenshots);
+        ClearDirectory(ArtifactPaths.ExtentReport);
+        ClearDirectory(ArtifactPaths.Logs);
+        ClearDirectory(ArtifactPaths.Allure);
+
+        Console.WriteLine("[GlobalSetup] Artifact cleanup complete.");
+    }
+
+    private static void ClearDirectory(string path)
+    {
+        try
         {
-            Console.WriteLine("[GlobalSetup] Starting artifact cleanup...");
+            // Ensure directory exists and is clean. Delete and recreate to remove stale files and subdirs.
+            if (Directory.Exists(path))
+            {
+                Directory.Delete(path, recursive: true);
+            }
 
-            ClearDirectory(ArtifactPaths.Screenshots);
-            ClearDirectory(ArtifactPaths.ExtentReport);
-            ClearDirectory(ArtifactPaths.Logs);
-            ClearDirectory(ArtifactPaths.Allure);
+            Directory.CreateDirectory(path);
 
-            Console.WriteLine("[GlobalSetup] Artifact cleanup complete.");
+
+
+            Console.WriteLine($"[GlobalSetup] Cleared/Created: {path}");
         }
-
-        private static void ClearDirectory(string path)
+        catch (Exception ex)
         {
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-                Console.WriteLine($"[GlobalSetup] Created: {path}");
-                return;
-            }
-
-            foreach (var file in Directory.GetFiles(path))
-            {
-                File.Delete(file);
-            }
-
-            Console.WriteLine($"[GlobalSetup] Cleared: {path}");
+            // Log and continue; tests should still run even if cleanup fails.
+            Console.WriteLine($"[GlobalSetup] Failed to clear/create '{path}': {ex.Message}");
         }
     }
 }

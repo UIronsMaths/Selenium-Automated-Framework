@@ -12,6 +12,7 @@ public class LoginTests : BaseTest
     [Test]
     public void ValidUserCanLogin()
     {
+        Expect("PASSED: Valid user should be able to log in and see the inventory page.");
         var loginPage = new LoginPage(Driver);
         loginPage.LoginAs(settings.Username, settings.Password);
         var inventoryPage = new InventoryPage(Driver);
