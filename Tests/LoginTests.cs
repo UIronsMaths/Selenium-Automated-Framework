@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 public class LoginTests : BaseTest
 {
     [Test]
+    [Property("Severity", "Critical")]
     public void ValidUserCanLogin()
     {
         Expect("PASSED: Valid user should be able to log in and see the inventory page.");

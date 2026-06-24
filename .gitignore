@@ -7,3 +7,6 @@ obj/
 
 # Test results
 *.trx
+
+# Local environment file (secrets)
+.env

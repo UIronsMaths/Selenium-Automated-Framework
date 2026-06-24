@@ -33,11 +33,11 @@ public static class LogManager
             .Enrich.WithProperty("Browser", settings.Browser)
             .Enrich.WithProperty("BaseUrl", settings.BaseUrl)
             .WriteTo.Console(
-                outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] [Test:{TestName}] [Id:{TestId}] [T:{ThreadId}] [B:{Browser}] {Message:lj}{NewLine}{Exception}")
+                outputTemplate: "[{Timestamp:HH:mm:ss}] [Test:{TestName}] [Id:{TestId}] [T:{ThreadId}] [B:{Browser}] [S:{Severity}] {NewLine}{Message:lj}{NewLine}{Exception}")
             .WriteTo.File(
                 path: logFilePath,
                 rollingInterval: RollingInterval.Day,
-                outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] [Test:{TestName}] [Id:{TestId}] [T:{ThreadId}] [B:{Browser}] {Message:lj}{NewLine}{Exception}",
+                outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss}] [Test:{TestName}] [Id:{TestId}] [T:{ThreadId}] [B:{Browser}] [S:{Severity}] {NewLine}{Message:lj}{NewLine}{Exception}",
                 retainedFileCountLimit: 7)
             .WriteTo.File(
                 new CompactJsonFormatter(),
@@ -89,7 +89,7 @@ public static class LogManager
 
     // New overload: push multiple properties (TestName, TestId, ThreadId, Browser) so all logs
     // automatically include test metadata. Returns an IDisposable that will pop all properties.
-    public static IDisposable BeginTestScope(string testName, string testId, string browser)
+    public static IDisposable BeginTestScope(string testName, string testId, string browser, string? severity = null)
     {
         var disposables = new List<IDisposable>
         {
@@ -98,6 +98,9 @@ public static class LogManager
             LogContext.PushProperty("Browser", browser ?? string.Empty),
             LogContext.PushProperty("ThreadId", Thread.CurrentThread.ManagedThreadId)
         };
+
+        if (!string.IsNullOrEmpty(severity))
+            disposables.Add(LogContext.PushProperty("Severity", severity));
 
         return new CompositeDisposable(disposables);
     }

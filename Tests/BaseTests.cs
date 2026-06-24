@@ -32,8 +32,10 @@ public abstract class BaseTest
     [SetUp]
     public void SetUp()
     {
-        // Push a per-test logging scope with metadata: TestName, TestId, Browser
-        _logScope = LogManager.BeginTestScope(TestName, TestContext.CurrentContext.Test.ID, settings?.Browser ?? "");
+        // Push a per-test logging scope with metadata: TestName, TestId, Browser and optional Severity
+        var severityObj = TestContext.CurrentContext.Test.Properties.Get("Severity");
+        var severity = severityObj?.ToString();
+        _logScope = LogManager.BeginTestScope(TestName, TestContext.CurrentContext.Test.ID, settings?.Browser ?? "", severity);
 
         var driver = DriverFactory.Create(settings.Browser, settings.Headless);
         driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(settings.PageLoadTimeoutSeconds);
@@ -99,7 +101,7 @@ public abstract class BaseTest
             {
                 LogManager.Error($"Error flushing report: {ex.Message}");
             }
-
+            /*
             // Finally: log the actual result as one of the last things in the test scope
             try
             {
@@ -110,7 +112,7 @@ public abstract class BaseTest
             {
                 LogManager.Error($"Error logging final actual result: {ex.Message}");
             }
-
+            */
             // Dispose the per-test log scope last so failure/teardown logs above still get tagged
             _logScope?.Dispose();
             _logScope = null;
