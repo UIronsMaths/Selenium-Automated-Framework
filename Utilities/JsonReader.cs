@@ -4,7 +4,9 @@ using NUnit.Framework.Internal;
 
 public class UserData
 {
-    public string Username { get; set; } public string Password { get; set; } public string Expected {  get; set; }
+    public string Username { get; set; }
+    public string Password { get; set; }
+    public string Expected { get; set; }
 }
 
 public class JsonReader
@@ -13,7 +15,6 @@ public class JsonReader
     public static List<UserData> ReadUsers(string file = "users.json")
     {
         string fullPath = Path.Combine(settings.BaseDirectory, file);
-        //LogManager.Step(fullPath);
         string json = File.ReadAllText(fullPath);
         return JsonConvert.DeserializeObject<List<UserData>>(json);
     }

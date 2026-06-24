@@ -4,10 +4,7 @@ public static class ScreenshotUtils
 {
     private static string DefaultDirectory => ArtifactPaths.Screenshots;
 
-    public static string? CaptureOnFailure(IWebDriver driver, string testName)
-    {
-        return Capture(driver, testName, DefaultDirectory);
-    }
+    public static string? CaptureOnFailure(IWebDriver driver, string testName) => Capture(driver, testName, DefaultDirectory);
 
     public static string? Capture(IWebDriver driver, string testName, string? directory = null)
     {
@@ -46,9 +43,5 @@ public static class ScreenshotUtils
         }
     }
 
-    private static string Sanitise(string name)
-    {
-        var invalid = Path.GetInvalidFileNameChars();
-        return string.Concat(name.Select(c => invalid.Contains(c) ? '_' : c));
-    }
+    private static string Sanitise(string name) => string.Concat(name.Select(c => Path.GetInvalidFileNameChars().Contains(c) ? '_' : c));
 }

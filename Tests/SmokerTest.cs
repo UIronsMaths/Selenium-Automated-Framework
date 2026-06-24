@@ -12,10 +12,10 @@ using Allure.NUnit;
 [AllureNUnit]
 public class Smoker
 {
-	[Test]
-	public void SimpleAllureTest()
-	{
-		AllureApi.Step("Just a step");
-		Assert.Pass();
-	}
+    [Test]
+    public void SimpleAllureTest()
+    {
+        AllureApi.Step("Just a step");
+        Assert.Pass();
+    }
 }

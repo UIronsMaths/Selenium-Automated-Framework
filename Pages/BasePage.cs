@@ -14,10 +14,7 @@ public abstract class BasePage
         PageFactory.InitElements(driver, this);
     }
 
-    protected IWebElement WaitForElement(By locator)
-    {
-        return Wait.Until(d => d.FindElement(locator));
-    }
+    protected IWebElement WaitForElement(By locator) => Wait.Until(d => d.FindElement(locator));
 
     protected bool IsElementVisible(By locator)
     {

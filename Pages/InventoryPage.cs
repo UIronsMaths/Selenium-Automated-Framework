@@ -2,6 +2,7 @@
 using SeleniumExtras.PageObjects;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using OpenQA.Selenium.Support.UI;
 public class InventoryPage
 {
@@ -24,15 +25,9 @@ public class InventoryPage
     public bool IsDisplayed() => PageTitle.Displayed;
     public string GetTitle() => PageTitle.Text;
     public int GetItemCount() => Items?.Count ?? 0;
-    public IEnumerable<string> GetItemNames()
-    {
-        if (Items == null) yield break;
-        foreach (var item in Items)
-        {
-            var nameEl = item.FindElement(By.ClassName("inventory_item_name"));
-            yield return nameEl.Text;
-        }
-    }
+    public IEnumerable<string> GetItemNames() => Items == null
+        ? Enumerable.Empty<string>()
+        : Items.Select(item => item.FindElement(By.ClassName("inventory_item_name")).Text);
 
     public IEnumerable<decimal> GetItemPrices()
     {

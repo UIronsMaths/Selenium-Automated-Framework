@@ -32,7 +32,7 @@ public class InventoryTests : BaseTest
         // Log first few item names for additional detail
         var names = inventoryPage.GetItemNames().ToList();
         var i = 1;
-        foreach(var name in names)
+        foreach (var name in names)
         {
             LogStep($"Item {i}: {name}");
             i++;

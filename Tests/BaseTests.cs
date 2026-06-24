@@ -144,7 +144,7 @@ public abstract class BaseTest
 
             if (settings.ReportType is "extent" or "both")
                 ExtentReportManager.LogFail(message ?? "Test failed.", screenshotPath);
-            if(settings.ReportType is "allure" or "both")
+            if (settings.ReportType is "allure" or "both")
                 AllureApi.AddAttachment("Screenshot", "image/png", screenshotPath);
         }
         else
@@ -166,7 +166,7 @@ public abstract class BaseTest
 
         if (settings.ReportType is "extent" or "both")
             ExtentReportManager.LogStep(description);
-        if(settings.ReportType is "allure" or "both")
+        if (settings.ReportType is "allure" or "both")
         {
             AllureApi.Step(description);
         }
