@@ -101,18 +101,18 @@ public abstract class BaseTest
             {
                 LogManager.Error($"Error flushing report: {ex.Message}");
             }
-            /*
+            
             // Finally: log the actual result as one of the last things in the test scope
             try
             {
                 var finalStatus = status == TestStatus.Failed ? $"FAILED: {message}" : "PASSED";
-                LogManager.SetActual(finalStatus);
+                //LogManager.SetActual(finalStatus);
             }
             catch (Exception ex)
             {
                 LogManager.Error($"Error logging final actual result: {ex.Message}");
             }
-            */
+            
             // Dispose the per-test log scope last so failure/teardown logs above still get tagged
             _logScope?.Dispose();
             _logScope = null;
