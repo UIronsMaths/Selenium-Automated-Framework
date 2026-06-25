@@ -33,7 +33,7 @@ public class CheckoutStepOnePage
 
     public CheckoutStepTwoPage Continue(string firstName, string lastName, string postalCode)
     {
-        LogManager.Step($"Filling checkout-step-one: {firstName} {lastName} {postalCode}");
+        LogManager.Step($"Filling checkout-step-one delivery details");
         FirstName.Clear();
         FirstName.SendKeys(firstName);
         LastName.Clear();

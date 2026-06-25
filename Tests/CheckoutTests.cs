@@ -78,7 +78,7 @@ public class CheckoutTests : BaseTest
 
         var stepOne = cart.ProceedToCheckout();
         LogStep("Filling checkout details and continuing");
-        var stepTwo = stepOne.Continue("Test", "User", "90210");
+        var stepTwo = stepOne.Continue(settings.ValidBuyerFN, settings.ValidBuyerLN, settings.ValidZipCode);
 
         LogStep("Finishing checkout");
         var complete = stepTwo.Finish();

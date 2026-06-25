@@ -5,6 +5,7 @@ using Microsoft.CodeAnalysis;
 using OpenQA.Selenium;
 namespace CSharpAxeAccessibility.Tests;
 
+
 [TestFixture]
 public class AccessibilityTests : BaseTest
 {
