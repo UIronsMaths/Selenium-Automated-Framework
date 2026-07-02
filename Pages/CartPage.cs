@@ -34,6 +34,7 @@ public class CartPage
     {
         LogManager.Step("Proceeding to checkout");
         CheckoutButton.Click();
+        Thread.Sleep(4000);
 
         var wait = new OpenQA.Selenium.Support.UI.WebDriverWait(Driver, System.TimeSpan.FromSeconds(new TestSettings().ExplicitWaitSeconds));
         wait.Until(d => d.Url.Contains("checkout-step-one.html"));

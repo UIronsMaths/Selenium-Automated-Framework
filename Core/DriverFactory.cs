@@ -2,15 +2,18 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Remote;
 public static class DriverFactory
 {
+    private static readonly Uri GridHubUri = new Uri("http://localhost:4444/wd/hub");
+
     public static IWebDriver Create(string browser, bool headless)
     {
         IWebDriver driver = browser.ToLowerInvariant() switch
         {
-            "firefox" => new FirefoxDriver(CreateFirefoxOptions(headless)),
-            "edge" => new EdgeDriver(CreateEdgeOptions(headless)),
-            _ => new ChromeDriver(CreateChromeOptions(headless))
+            "firefox" => new RemoteWebDriver(GridHubUri, CreateFirefoxOptions(headless)),
+            "edge" => new RemoteWebDriver(GridHubUri, CreateEdgeOptions(headless)),
+            _ => new RemoteWebDriver(GridHubUri, CreateChromeOptions(headless))
         };
         driver.Manage().Window.Maximize();
         return driver;

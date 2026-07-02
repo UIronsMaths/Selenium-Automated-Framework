@@ -69,6 +69,7 @@ public class InventoryPage
                     LogManager.Step($"Button before click: text='{btn.Text}', class='{btn.GetAttribute("class")}'");
                     btn.Click();
                     LogManager.Step($"Button after click: text='{btn.Text}'");
+                    Thread.Sleep(4000);
 
                     var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(new TestSettings().ExplicitWaitSeconds));
                     wait.Until(d => btn.Text == "Remove");

@@ -25,6 +25,7 @@ public class LoginPage
         Password.SendKeys(password);
         LoginButton.Click();
         HandleBrowserAlert();
+        Thread.Sleep(4000);
         //return new InventoryPage(driver);
     }
     private void HandleBrowserAlert()
